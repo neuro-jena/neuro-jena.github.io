@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="/">
+    <img src="/assets/img/blueyellow/fieldtriplogo-75.png" width="75" alt="FieldTrip logo">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      {% for item in site.data.navigation %}
+        <li class="nav-item {% if item.link == page.url %} active {% endif %}">
+          <a class="nav-link {% if item.link == page.url %} active {% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/fieldtrip">
+          <span class="fab fa-github"></span>
+        </a>
+      </li>
+    </ul>
+    
+    {% include searchwebsite %}
+    
+  </div>
+</nav>

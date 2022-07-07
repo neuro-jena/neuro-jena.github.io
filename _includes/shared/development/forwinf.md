@@ -1,0 +1,1 @@
+In case the anatomy description is available, it is not used to generate the infinite-medium forward solution. A structure that describes an infinite-medium volume conduction model is generated with only one field: `headmodel.type = 'infinite'`.

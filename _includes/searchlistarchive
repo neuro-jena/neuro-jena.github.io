@@ -1,0 +1,2 @@
+<!-- Mailing list search -->
+<form method="get" action="https://www.google.com/search"><input type="hidden" name="q" value="site:mailman.science.ru.nl/pipermail/fieldtrip">Search the mailing list<input type="text" name="q" placeholder="using Google"><input type="submit" value="🔍" /></form>

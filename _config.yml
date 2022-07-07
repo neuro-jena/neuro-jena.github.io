@@ -1,1 +1,95 @@
-theme: jekyll-theme-cayman
+title: FieldTrip toolbox
+email: fieldtriptoolbox@gmail.com
+description: FieldTrip - the toolbox for MEG, EEG and iEEG
+
+baseurl: "/"                                # the subpath of your site, e.g. /blog
+url: "https://www.fieldtriptoolbox.org"     # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: fieldtriptoolbx
+github_username:  fieldtrip
+
+excerpt_separator: <!--more-->
+
+# Build settings
+sass:
+  sass_dir: ./assets/css
+
+# see https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      toc: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      toc: false
+      sitemap: false
+  -
+    scope:
+      path: "development/project"
+      type: "pages"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "development/meeting"
+      type: "pages"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "tag"
+      type: "pages"
+    values:
+      sitemap: false
+
+toc:
+  min_level: 2 # default: 1
+  max_level: 4 # default: 6
+
+permalink: pretty
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: matlab
+
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-toc           # https://github.com/toshimaru/jekyll-toc
+  - jekyll-sitemap       # https://github.com/jekyll/jekyll-sitemap
+  - jekyll-redirect-from # https://blog.webjeda.com/jekyll-redirect/
+
+exclude:
+  - README.md
+  - COPYING.md
+  - Gemfile*
+# the following section can be commented out to speed up the build process for testing
+#  - assets/img/*
+#  - dataformat/*
+#  - development/*
+#  - example/*
+#  - faq/*
+#  - getting_started/*
+#  - reference/*
+#  - template/*
+#  - tag/*
+#  - tutorial/*
+#  - video/*
+#  - workshop/*
+
+keep_files:
+  - biositemap.rdf
+  - download.php
+  - google88883c5d6c57aca6.html
+  - jquery.layout+d3+dagre+dagre-d3.min.js
+  - pipeline.css
+  - pipeline.js
+  - tree-graph.png
