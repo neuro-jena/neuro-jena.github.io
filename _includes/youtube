@@ -1,2 +1,0 @@
-<!-- Embed a YouTube video using the version without cookies -->
-<iframe width="500" height="281" src="https://www.youtube-nocookie.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>

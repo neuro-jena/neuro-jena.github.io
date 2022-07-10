@@ -1,2 +1,0 @@
-<!-- Website and mailing list search -->
-<form method="get" action="https://www.google.com/search"><input type="hidden" name="q" value="site:www.fieldtriptoolbox.org OR site:mailman.science.ru.nl/pipermail/fieldtrip"/><input type="text" name="q" placeholder="Search using Google"><input type="submit" value="🔍" /></form>

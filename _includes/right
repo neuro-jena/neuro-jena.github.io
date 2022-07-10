@@ -1,5 +1,0 @@
-{% if page.toc %}
-  <div class="page-toc">
-    {{ content | toc_only }}
-  </div>
-{% endif %}
