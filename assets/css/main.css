@@ -2053,7 +2053,7 @@ input, select, textarea {
     .wrapper.style5 {
       background: #bdb4ac url("images/overlay.png");
       color: #eee;
-      color: rgba(238, 238, 238, 0.75);
+      color: rgba(25, 25, 25, 0.75);
     }
 
       .wrapper.style5 .title {
@@ -2578,9 +2578,9 @@ input, select, textarea {
     #copyright ul {
       display: inline-block;
       border-radius: 0.35em;
-      box-shadow: inset 0px 0px 1px 1px rgba(25, 25, 25, 0.5);
+      box-shadow: inset 0px 0px 1px 1px rgba(25, 25, 25, 0.35);
       color: #aaa;
-      color: rgba(25, 25, 25, 0.5);
+      color: rgba(25, 25, 25, 0.35);
       padding: 0.75em 2em;
       font-size: 0.9em;
     }
