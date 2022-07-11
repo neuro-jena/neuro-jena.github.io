@@ -2051,13 +2051,13 @@ input, select, textarea {
       }
 
     .wrapper.style5 {
-      background: #bda58f url("images/overlay.png");
+      background: #bdb4ac url("images/overlay.png");
       color: #eee;
       color: rgba(238, 238, 238, 0.75);
     }
 
       .wrapper.style5 .title {
-        background: #bda58f url("images/overlay.png");
+        background: #bdb4ac url("images/overlay.png");
         color: #fff;
       }
 
@@ -2084,13 +2084,13 @@ input, select, textarea {
       }
 
     .wrapper.style8 {
-      background: #e8d2c1 url("images/overlay.png");
+      background: #e8e0da url("images/overlay.png");
       color: #eee;
       color: rgba(25, 25, 25, 0.75);
     }
 
       .wrapper.style8 .title {
-        background: #e8d2c1 url("images/overlay.png");
+        background: #e8e0da url("images/overlay.png");
         color: #fff;
       }
 
@@ -2222,7 +2222,7 @@ input, select, textarea {
     justify-content: center;
     position: relative;
     height: 24em;
-    background: url("../../images/vladstudio_treeofbooks.jpg") center center;
+    background: url("../../images/vladstudio_googlelibrary.jpg") center center;
     background-size: cover;
     padding: 0;
   }
