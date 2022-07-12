@@ -163,6 +163,18 @@ input, select, textarea {
     font-size: 0.8em;
   }
 
+  .align-left {
+    text-align: left;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
   .nobr {
     white-space: nowrap;
   }
@@ -1588,39 +1600,56 @@ input, select, textarea {
 /* Image */
 
   .image {
+    border-radius: 8px;
+    border: 0;
     display: inline-block;
+    position: relative;
   }
 
     .image img {
+      border-radius: 8px;
       display: block;
-      width: 100%;
+    }
+
+    .image.left, .image.right {
+      max-width: 25%;
+    }
+
+      .image.left img, .image.right img {
+        width: 100%;
+      }
+
+    .image.left {
+      float: left;
+      padding: 0 1.5em 1em 0;
+      top: 0.25em;
+    }
+
+    .image.right {
+      float: right;
+      padding: 0 0 1em 1.5em;
+      top: 0.25em;
     }
 
     .image.fit {
       display: block;
+      margin: 0 0 2em 0;
       width: 100%;
     }
 
-    .image.left {
-      float: left;
-      margin: 0 2em 2em 0;
-    }
-
-    .image.centered {
-      display: block;
-      margin: 0 0 2em 0;
-    }
-
-      .image.centered img {
-        margin: 0 auto;
-        width: auto;
+      .image.fit img {
+        width: 100%;
       }
 
-    .image.featured {
+    .image.main {
       display: block;
+      margin: 0 0 3em 0;
       width: 100%;
-      margin: 0 0 2em 0;
     }
+
+      .image.main img {
+        width: 100%;
+      }
 
 /* Button */
 
@@ -1637,7 +1666,7 @@ input, select, textarea {
     background: #444;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 0.25em;
     text-decoration: none;
     border-radius: 0.35em;
@@ -1700,7 +1729,7 @@ input, select, textarea {
     .button.style2 {
       background: none;
       color: #606167;
-      box-shadow: inset 0px 0px 2px 0px #a0a1a7;
+      box-shadow: inset 0px 0px 2px 0px #707177;
     }
 
       input[type="button"].style2:hover,
@@ -1708,7 +1737,7 @@ input, select, textarea {
       input[type="reset"].style2:hover,
       button.style2:hover,
       .button.style2:hover {
-        box-shadow: inset 0px 0px 2px 0px #606167;
+        box-shadow: inset 0px 0px 2px 0px #303137;
       }
 
       input[type="button"].style2:active,
@@ -1716,7 +1745,7 @@ input, select, textarea {
       input[type="reset"].style2:active,
       button.style2:active,
       .button.style2:active {
-        box-shadow: inset 0px 0px 2px 0px #202127;
+        box-shadow: inset 0px 0px 2px 0px #101117;
       }
 
     input[type="button"].style3,
@@ -1957,6 +1986,7 @@ input, select, textarea {
   .wrapper {
     position: relative;
     padding: 3em 0 0.1em 0;
+    text-align: justify;
   }
 
     .wrapper .title {
@@ -2018,13 +2048,25 @@ input, select, textarea {
       }
 
     .wrapper.style2 {
-      background: #e8e0da url("images/overlay.png");
+      background: #ccdce8 url("images/overlay.png");
+      color: #eee;
+      color: rgba(25, 25, 25, 0.75);
+      text-align: right;
+    }
+
+      .wrapper.style2 .title {
+        background: #ccdce8 url("images/overlay.png");
+        color: #fff;
+      }
+
+    .wrapper.style21 {
+      background: #d8e5f0 url("images/overlay.png");
       color: #eee;
       color: rgba(25, 25, 25, 0.75);
     }
 
-      .wrapper.style2 .title {
-        background: #e8e0da url("images/overlay.png");
+      .wrapper.style21 .title {
+        background: #d8e5f0 url("images/overlay.png");
         color: #fff;
       }
 
@@ -2036,6 +2078,16 @@ input, select, textarea {
 
       .wrapper.style3 .title {
         background: #cbccd4 url("images/overlay.png");
+        color: #fff;
+      }
+
+    .wrapper.style31 {
+      color: #fff;
+      color: rgba(25, 25, 25, 0.75);
+    }
+
+      .wrapper.style31 .title {
+        background: #fff url("images/overlay.png");
         color: #fff;
       }
 
