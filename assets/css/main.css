@@ -1956,7 +1956,7 @@ input, select, textarea {
 
   .wrapper {
     position: relative;
-    padding: 6em 0 9em 0;
+    padding: 3em 0 0.1em 0;
   }
 
     .wrapper .title {
@@ -2018,25 +2018,25 @@ input, select, textarea {
       }
 
     .wrapper.style2 {
-      background: #fff;
+      background: #e8e0da url("images/overlay.png");
+      color: #eee;
+      color: rgba(25, 25, 25, 0.75);
     }
 
       .wrapper.style2 .title {
-        background: #fff;
-        color: #484d55;
+        background: #e8e0da url("images/overlay.png");
+        color: #fff;
       }
 
     .wrapper.style3 {
-      background: #f3f3f3 url("images/overlay.png");
+      background: #cbccd4 url("images/overlay.png");
+      color: #eee;
+      color: rgba(25, 25, 25, 0.75);
     }
 
       .wrapper.style3 .title {
-        background: #f3f3f3 url("images/overlay.png");
-        color: #484d55;
-      }
-
-      .wrapper.style3 .image {
-        border: solid 10px #fff;
+        background: #cbccd4 url("images/overlay.png");
+        color: #fff;
       }
 
     .wrapper.style4 {
@@ -2050,6 +2050,17 @@ input, select, textarea {
         color: #fff;
       }
 
+    .wrapper.style41 {
+      background: #d8e5f0 url("images/overlay.png");
+      color: #eee;
+      color: rgba(25, 25, 25, 0.75);
+    }
+
+      .wrapper.style41 .title {
+        background: #d8e5f0 url("images/overlay.png");
+        color: #fff;
+      }
+
     .wrapper.style5 {
       background: #bdb4ac url("images/overlay.png");
       color: #eee;
@@ -2058,6 +2069,17 @@ input, select, textarea {
 
       .wrapper.style5 .title {
         background: #bdb4ac url("images/overlay.png");
+        color: #fff;
+      }
+
+    .wrapper.style51 {
+      background: #d9d2cc url("images/overlay.png");
+      color: #eee;
+      color: rgba(25, 25, 25, 0.75);
+    }
+
+      .wrapper.style51 .title {
+        background: #d9d2cc url("images/overlay.png");
         color: #fff;
       }
 
@@ -2080,28 +2102,6 @@ input, select, textarea {
 
       .wrapper.style7 .title {
         background: #e8e5cc url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style8 {
-      background: #e8e0da url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
-    }
-
-      .wrapper.style8 .title {
-        background: #e8e0da url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style9 {
-      background: #cbccd4 url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
-    }
-
-      .wrapper.style9 .title {
-        background: #cbccd4 url("images/overlay.png");
         color: #fff;
       }
 
