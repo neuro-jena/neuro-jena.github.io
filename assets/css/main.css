@@ -2114,13 +2114,13 @@ input, select, textarea {
       }
 
     .wrapper.style5 {
-      background: #bdb4ac url("images/overlay.png");
+      background: #cdc4bc url("images/overlay.png");
       color: #eee;
       color: rgba(25, 25, 25, 0.75);
     }
 
       .wrapper.style5 .title {
-        background: #bdb4ac url("images/overlay.png");
+        background: #cdc4bc url("images/overlay.png");
         color: #fff;
       }
 
