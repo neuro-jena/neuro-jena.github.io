@@ -2071,13 +2071,13 @@ input, select, textarea {
       }
 
     .wrapper.style3 {
-      background: #cbccd4 url("images/overlay.png");
+      background: #ebecf4 url("images/overlay.png");
       color: #eee;
       color: rgba(25, 25, 25, 0.75);
     }
 
       .wrapper.style3 .title {
-        background: #cbccd4 url("images/overlay.png");
+        background: #ebecf4 url("images/overlay.png");
         color: #fff;
       }
 
