@@ -70,10 +70,10 @@
                   <a href="software.html">Software</a>
                   <ul>
                     <li><a href="software.html#cat">Computational Anatomy Toolbox</a></li>
-                    <li><a href="software.html#vbm">VBM-Toolboxes</a></li>
                     <li><a href="software.html#tfce">TFCE-Toolbox</a></li>
-                    <li><a href="software.html#tom">Template-O-Matic Toolbox</a></li>
                     <li><a href="software.html#lst">Lesion Segmentation Toolbox</a></li>
+                    <li><a href="software.html#tom">Template-O-Matic Toolbox</a></li>
+                    <li><a href="software.html#vbm">VBM-Toolboxes</a></li>
                   </ul>
                 <li><a href="#footer">Contact</a></li>
               </li>
@@ -86,31 +86,125 @@
         <div class="container">
 
           <h3><a href="https://neuro-jena.github.io/cat">Computational Anatomy Toolbox (CAT)</a></h3>
-          <p>This toolbox is an extension to <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm12/" target="_blank" rel="noopener noreferrer">SPM12</a> (Wellcome Department of Cognitive Neurology) to provide computational anatomy. This covers diverse morphometric methods such as voxel-based morphometry (VBM), surface-based morphometry (SBM), deformation-based morphometry (DBM), and region- or label-based morphometry (RBM).</p>
+          <p><a href="https://neuro-jena.github.io/cat">CAT12</a> is an extension to <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm12/" target="_blank" rel="noopener noreferrer">SPM12</a> (Wellcome Department of Cognitive Neurology) to provide computational anatomy. This covers diverse morphometric methods such as voxel-based morphometry (VBM), surface-based morphometry (SBM), deformation-based morphometry (DBM), and region- or label-based morphometry (RBM).<br/>
+          It is developed by Christian Gaser and Robert Dahnke and is available to the scientific community under the terms of the GNU General Public Licence as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.</p>
+          <h4>Installation</h4>
+            Detailed instructions for download and installation can be found <a href="https://neuro-jena.github.io/cat/index.html#DOWNLOAD">here</a>.<br/>
+          <h4>Manual</h4>
+            You can download the CAT12 manual <a href="http://www.neuro.uni-jena.de/cat12/CAT12-Manual.pdf">here</a>.<br/>          
+          <h4>Quick Start Guide</h4>
+            <p>A good starting point for using CAT12 is the <a href="https://neuro-jena.github.io/cat12-html/cat_starting.html">Quick Start Guide</a>.</p>
+          <h4>Citation</h4>
+            <p>Please <a href="https://neuro-jena.github.io/cat12-html/cat_references.html">cite our papers</a> and the work of other researchers if you use this software.</a></p>
+          <h4>ENIGMA-CAT12 Protocol</h4>
+            <p>These protocols use CAT12 to process voxel- and surface-based morphometry, but also enable region-based measures for volume and surface data.<br/>
+            View and download the ENIGMA-CAT12 protocol <a href="https://neuro-jena.github.io/enigma-cat12/">here</a>.</p>
         </div>
       </section>
 
-      <section id="vbm" class="wrapper style4">
+      <section id="tfce" class="wrapper style41">
         <div class="container">
-          <h3><a href="#">VBM-Toolboxes (outdated)</a></h3>
-          <p>The VBM toolboxes are a collection of extensions to the segmentation algorithm of <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm2/" target="_blank" rel="noopener noreferrer">SPM2</a>, <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm5/" target="_blank" rel="noopener noreferrer">SPM5</a>, and <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm8/" target="_blank" rel="noopener noreferrer">SPM8</a> (Wellcome Department of Cognitive Neurology) to provide voxel-based morphometry (VBM). The toolboxes are named according to the SPM version. The software was developed by Christian Gaser (University of Jena, Department of Psychiatry) and is available to the scientific community under the terms of the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank" rel="noopener noreferrer">GNU General Public License.</a></p>
-        </div>
-      </section>
-
-      <section id="tfce" class="wrapper style4">
-        <div class="container">
-          <h3><a href="http://www.neuro.uni-jena.de/tom8">Template-O-Matic Toolbox</a></h3>
-          <p>The TOM toolbox takes a radically new approach towards providing reference data, based on imaging data from the <a href="http://www.bic.mni.mcgill.ca/nihpd/info/">NIH study</a> of normal brain development. Using the general linear model, we statistically isolate the influence of external variables of interest on brain structure, allowing us to generate high-quality matched templates for any given group of subjects.</p>
+          <h3><a href="http://www.neuro.uni-jena.de/tfce">Threshold-free Cluster Enhancement Toolbox (TFCE)</a></h3>
+          <p>This toolbox is an extension to <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm12/" target="_blank" rel="noopener noreferrer">SPM12</a> (Wellcome Department of Cognitive Neurology) to provide non-parametric statistics based on threshold-free cluster enhancement (TFCE).<br/>
+          It is developed by Christian Gaser and is available to the scientific community under the terms of the GNU General Public Licence as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.</p>
+          <h4>Installation</h4>
+          <ul>
+          <li>Download newest version <a href="http://www.neuro.uni-jena.de/tfce/tfce_latest.zip">tfce_latest.zip</a>.</li>
+          <li>Unpack the zip-file</li>
+          <li>Remove the old TFCE folder</li>
+          <li>Copy or link the TFCE folder to the spm12/toolbox directory</li>
+          </ul>
+          <p>You can start the toolbox by choosing "TFCE" in the "Toolbox" selector.</p>
         </div>
       </section>
 
       <section id="lst" class="wrapper style4">
         <div class="container">
-          <h3><a href="/software/lst">Lesion Segmentation Toolbox</a></h3>
-          <p>The toolbox &#8220;LST: Lesion Segmentation Tool&#8221; is an open source toolbox for the segmentation of lesions in Multiple Sclerosis (MS) for SPM.<br />
-          It is able to detect T2 hyperintense lesions based on a T1 and a FLAIR image.<br />
-          Beside the segmentation a utility function for filling lesions in T1 images is implemented.</p>
+          <h3><a href="https://www.applied-statistics.de/lst.html">Lesion Segmentation Toolbox (LST)</a></h3>
+
+          <p>The toolbox is an open source toolbox for SPM12 that is able to segment T2 hyperintense lesions in FLAIR images. Originally developed for the segmentation of MS lesions it has has also been proven to be useful for the segmentation of brain lesions in the context of other diseases, such as diabetes mellitus or Alzheimer's disease.</p>
+          <p>Currently, there are two algorithms implemented for lesion segmentation. The first, a <a href="#LST_LGA_anchor">lesion growth algorithm (LGA</a>, <a href="http://www.sciencedirect.com/science/article/pii/S1053811911013139">Schmidt et al., 2012)</a>, requires a T1 image in addition to the FLAIR image. The second algorithm, a <a href="#LST_PMBC_anchor">lesion prediction algorithm (LPA, <a href="https://edoc.ub.uni-muenchen.de/20373/">Schmidt, 2017, Chapter 6.1</a>)</a>, requires a FLAIR image only. As a third highlight a pipeline allowing the <a href="#LST_long_anchor">longitudinal segmentation</a> (<a href="https://www.sciencedirect.com/science/article/pii/S2213158219301998">Schmidt et al., 2019</a>) is implemented. In addition, the toolbox can be used to fill lesions in any image modility.</p>
           
+          <h4>Development</h4>
+          <p>The toolbox was developed by a collaboration of the following organizations: <a href="http://www.neurokopfzentrum.med.tum.de/neurologie/425.html">Morphometry Group</a>, Department of Neurology, Technische Universität München (TUM), Munich, <a href="http://www.stat.uni-muenchen.de">Department of Statistics</a>, Ludwig-Maximilians-University, Munich, Germany, and <a href="http://dbm.neuro.uni-jena.de">Structural Brain Mapping Group</a>, Departments of Neurology and Psychiatry, Friedrich-Schiller-University, Jena, Germany. The rationale, approach and further details are available in a NeuroImage <a href="/pdf-files/Schmidt-NI11.pdf">paper</a>.</p>
+          <h4>Download</h4>
+          <p>We make the software available at the website of <a href="http://www.applied-statistics.de/lst.html">Paul Schmidt</a>.</p>
+          <h4>Installation</h4>
+          <ul>
+          <li>Download LST.</li>
+          <li>Unpack the zip-file</li>
+          <li>Remove the old LST folder</li>
+          <li>Copy or link the LST folder to the spm12/toolbox directory</li>
+          </ul>
+          <p>You can start the toolbox by choosing "LST" in the "Toolbox" selector.</p>
+          
+        </div>
+      </section>
+
+      <section id="tom" class="wrapper style41">
+        <div class="container">
+          <h3><a href="http://www.neuro.uni-jena.de/TOM8">Template-O-Matic Toolbox (TOM)</a></h3>
+
+
+          <p>The TOM toolbox takes a radically new approach towards providing reference data, based on imaging data from the <a href="http://www.bic.mni.mcgill.ca/nihpd/info/">NIH study</a> of normal brain development. Using the general linear model, we statistically isolate the influence of external variables of interest on brain structure, allowing us to generate high-quality matched templates for any given group of subjects. The toolbox offers two options:</p>
+          <ol>
+          <li>to create pediatric templates (T1) and tissue maps (GM, WM, and CSF) based on the objective 1 NIH data (n = 404), in the age range of 5-18 years, or</li>
+          <li>to assess a new reference population with regard to your variables of interest.</li>
+          </ol>
+          <p>Of note, this approach is generally applicable and in no way restricted to analyzing pediatric imaging data: for example, if you aim at investigating the effects of aging in elderly subjects, the toolbox will also allow you to create more appropriate reference (if your group is large enough to isolate such effects).</p>
+          <h4>Template creation method</h4>
+          <p>Two general approaches seem feasible to construct appropriate reference data. First, the average age, gender, etc. is calculated based on the supplied input information (i.e., the demographic variables of the sample under study), and a fitting average template is created accordingly. Here, we term this the average approach. Alternatively, the input sample could be completely matched such that one reference tissue map is generated for each input subject, and these matched reference maps would only be averaged at the end. We term this the matched pairs approach.<br />
+          For all template files we also save the according mat-file. Although, this is non-standard for nifti-images, it will offer backwards compatibility to older SPM versions. SPM5 (and all other nifti-based software) will simply ignore the mat-file.</p>
+          <h4>Order of polynomial regression</h4>
+          <p>Age can be modeled as polynomial regression with up to third order terms. The simplest model is a linear regression (which is not recommended). Either third or second order regression is appropriate for modeling aging effects. The different age terms will be orthogonalized with regard to its<br />
+          preceeding column.</p>
+          <h4>Development</h4>
+          <p>This toolbox is the result of a joint effort by the <a href="http://www.medizin.uni-tuebingen.de/kinder/en/">Department of Pediatric Neurology and Developmental Medicine</a> (Marko Wilke, Tuebingen, Germany), the <a href="http://irc.cchmc.org/">Imaging Research Center</a> (Scott Holland and Mekibib Altaye, Cincinnati, OH, USA), and the <a href="http://dbm.neuro.uni-jena.de">Structural Brain Mapping Group</a> (Christian Gaser, Jena, Germany). The rationale, approach and further details are available in a NeuroImage <a href="pdf/Wilke-NI08.pdf">paper</a>.</p>
+          <h4>Installation</h4>
+          <ul>
+          <li>Download <a href="http://www.neuro.uni-jena.de/TOM8/TOM8_r12.zip">TOM_v12.xx.zip</a>.</li>
+          <li>Download NIH-data <a href="http://www.neuro.uni-jena.de/TOM8/TOM_NIH_IXI_spm8.tar.gz">TOM_NIH_IXI_spm8.tar.gz</a>.</li>
+          <li>Unpack the zip-file</li>
+          <li>Remove the old TOM folder</li>
+          <li>Copy or link the TOM folder to the spm8/toolbox directory</li>
+          </ul>
+          <p>You can start the toolbox by choosing "TOM" in the "Toolbox" selector.</p>
+
+        </div>
+      </section>
+
+      <section id="vbm" class="wrapper style4">
+        <div class="container">
+          <h3>VBM-Toolboxes (not actively developed anymore)</h3>
+          <p>The VBM toolboxes are a collection of extensions to the segmentation algorithm of <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm2/" target="_blank" rel="noopener noreferrer">SPM2</a>, <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm5/" target="_blank" rel="noopener noreferrer">SPM5</a>, and <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm8/" target="_blank" rel="noopener noreferrer">SPM8</a> (Wellcome Department of Cognitive Neurology) to provide voxel-based morphometry (VBM). The toolboxes are named according to the SPM version.<br/>
+          It is developed by Christian Gaser ans is available to the scientific community under the terms of the GNU General Public Licence as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.<br/>
+          Please note, that <a href="https://neuro-jena.github.io/cat">CAT12</a> replaces these earlier toolboxes. It contains significant improvements over VBM8 and the main difference (other than running under SPM12) is the ability to estimate and analyze cortical surface and associated parameters such as thickness and gyrification. This important change is now reflected in the name of the new toolbox, as CAT12 will provide easy-to-use tools covering different morphometric methods such as voxel-based morphometry (VBM), surface-based morphometry (SBM), deformation-based morphometry (DBM), and region- or label-based morphometry (RBM).
+          </p>
+
+          <h4>VBM8 Toolbox (for SPM8)</h4>
+          Download the newest version from that <a href="http://141.35.69.218/vbm8">folder</a>.<br/>
+          <ul>
+          <li>Unpack the zip-file</li>
+          <li>Remove the old vbm8 folder</li>
+          <li>Xopy or link the vbm8 folder to the spm8/toolbox directory</li>
+          </ul>
+          You can start the toolbox by choosing "vbm8" in the "Toolbox" selector.<br/>
+          A manual can be found here <a href="http://141.35.69.218/vbm8/VBM8-Manual.pdf">VBM8-Manual</a> (written by Florian Kurth and Eileen Lüders).<br/>
+          <h4>VBM5.1 Toolbox version 1.19 (for SPM5)</h4>
+          Download <a href="http://141.35.69.218/vbm5_v1.19.zip">vbm5_v1.19.zip</a>.<br/>
+          <ul>
+          <li>Unpack the zip-file</li>
+          <li>Remove the old vbm5 folder</li>
+          <li>Copy or link the vbm5 folder to the spm5/toolbox directory</li>
+          </ul>
+          You can start the toolbox by choosing "vbm5" in the "Toolbox" selector.<br/>
+          A preliminary manual can be found here <a href="http://141.35.69.218/VBM5.1-Manual.pdf">VBM5.1-Manual</a>.<br/>
+          <h4>VBM2 Toolbox version 1.09 (for SPM2)</h4>
+          Download <a href="http://141.35.69.218/vbm2_v1.09.zip">vbm2_v1.09.zip</a>.<br/>
+          <p>Unpack the zip-file. Now, you have two options for using VBM2 within SPM:<br/>
+          First (and recommended), you can copy or link the vbm2 folder to the spm2/toolbox directory. You can start the toolbox by selecting "vbm2" from the toolbox button on the SPM interface after restarting spm.<br/>
+          Secondly, you can add the vbm2 folder to your matlab path and can start from the matlab prompt with the command "spm_vbm2".</p>
+
         </div>
       </section>
 
