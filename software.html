@@ -14,12 +14,15 @@
   <body class="homepage is-preload">
     <div id="page-wrapper">
 
+    <!-- Wrapper -->
+      <div id="wrapper">
+
       <!-- Header -->
         <section id="software" class="wrapper">
 
           <!-- Logo -->
             <div id="logo">
-              <h1><a href="index.html">Software</a></h1>
+              <h1><a href="#">Software</a></h1>
             </div>
 
         <!-- Nav -->
@@ -28,14 +31,6 @@
                 <li class="current"><a href="index.html">Home</a></li>
                 <li>
                   <a href="people.html">People</a>
-                  <ul>
-                    <li><a href="people.html#christian">Christian Gaser</a></li>
-                    <li><a href="people.html#katja">Katja Franke</a></li>
-                    <li><a href="people.html#robert">Robert Dahnke</a></li>
-                    <li><a href="people.html#polona">Polona Kalc</a></li>
-                    <li><a href="people.html#tannaz">Tannaz Saraei</a></li>
-                    <li><a href="people.html#alumni">Alumni</a></li>
-                  </ul>
                 </li>
                 <li>
                   <a href="research.html">Research</a>
@@ -77,13 +72,24 @@
         </section>
 
       <!-- Main -->
-      <section id="github" class="wrapper style4">
+      <section id="#" class="panel style1">
         <div class="container">
           <p>Our open source software can be found at <a href="https://github.com/ChristianGaser">Github</a> and is available to the scientific community under the terms of the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public Licence</a> as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.</p>
+
+        <div class="container">
+          <div class="row">
+            <p><a href="software.html#cat"><img class="image left" src="images/cat-logo.png" alt="" height="100"></a>
+            <a href="software.html#tfce"><img class="image left" src="images/tfce-logo.png" alt="" height="100"></a>
+            <a href="software.html#lst"><img class="image left" src="images/lst-logo.png" alt="" height="100"></a>
+            <a href="software.html#tom"><img class="image left" src="images/tom-logo.png" alt="" height="100"></a>
+            <a href="software.html#vbm"><img class="image left" src="images/vbm-logo.png" alt="" height="100"></a>
+            </p>
+          </div>
         </div>
+
       </section>
 
-      <section id="cat" class="wrapper style41">
+      <section id="cat" class="panel style4">
         <div class="container">
 
           <h3><a href="https://neuro-jena.github.io/cat">Computational Anatomy Toolbox (CAT)</a></h3>
@@ -103,7 +109,7 @@
         </div>
       </section>
 
-      <section id="tfce" class="wrapper style4">
+      <section id="tfce" class="panel style4">
         <div class="container">
           <h3><a href="http://www.neuro.uni-jena.de/tfce">Threshold-free Cluster Enhancement Toolbox (TFCE)</a></h3>
           <p>This toolbox is an extension to <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm12/" target="_blank" rel="noopener noreferrer">SPM12</a> (Wellcome Department of Cognitive Neurology) to provide non-parametric statistics based on threshold-free cluster enhancement (TFCE). It is developed by Christian Gaser.</p>
@@ -118,7 +124,7 @@
         </div>
       </section>
 
-      <section id="lst" class="wrapper style41">
+      <section id="lst" class="panel style4">
         <div class="container">
           <h3><a href="https://www.applied-statistics.de/lst.html">Lesion Segmentation Toolbox (LST)</a></h3>
 
@@ -141,7 +147,7 @@
         </div>
       </section>
 
-      <section id="tom" class="wrapper style4">
+      <section id="tom" class="panel style4">
         <div class="container">
           <h3><a href="http://www.neuro.uni-jena.de/TOM8">Template-O-Matic Toolbox (TOM)</a></h3>
 
@@ -173,7 +179,7 @@
         </div>
       </section>
 
-      <section id="vbm" class="wrapper style41">
+      <section id="vbm" class="panel style4">
         <div class="container">
           <h3>VBM-Toolboxes (not actively developed anymore)</h3>
           <p>The VBM toolboxes are a collection of extensions to the segmentation algorithm of <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm2/" target="_blank" rel="noopener noreferrer">SPM2</a>, <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm5/" target="_blank" rel="noopener noreferrer">SPM5</a>, and <a href="http://www.fil.ion.ucl.ac.uk/spm/software/spm8/" target="_blank" rel="noopener noreferrer">SPM8</a> (Wellcome Department of Cognitive Neurology) to provide voxel-based morphometry (VBM). The toolboxes are named according to the SPM version. It is developed by Christian Gaser.<br/>
@@ -181,25 +187,25 @@
           </p>
 
           <h4>VBM8 Toolbox (for SPM8)</h4>
-          Download the newest version from that <a href="http://141.35.69.218/vbm8">folder</a>.<br/>
+          Download the newest version from that <a href="http://14.35.69.218/vbm8">folder</a>.<br/>
           <ul>
           <li>Unpack the zip-file</li>
           <li>Remove the old vbm8 folder</li>
           <li>Xopy or link the vbm8 folder to the spm8/toolbox directory</li>
           </ul>
           You can start the toolbox by choosing "vbm8" in the "Toolbox" selector.<br/>
-          A manual can be found here <a href="http://141.35.69.218/vbm8/VBM8-Manual.pdf">VBM8-Manual</a> (written by Florian Kurth and Eileen Lüders).<br/>
+          A manual can be found here <a href="http://14.35.69.218/vbm8/VBM8-Manual.pdf">VBM8-Manual</a> (written by Florian Kurth and Eileen Lüders).<br/>
           <h4>VBM5.1 Toolbox version 1.19 (for SPM5)</h4>
-          Download <a href="http://141.35.69.218/vbm5_v1.19.zip">vbm5_v1.19.zip</a>.<br/>
+          Download <a href="http://14.35.69.218/vbm5_v1.19.zip">vbm5_v1.19.zip</a>.<br/>
           <ul>
           <li>Unpack the zip-file</li>
           <li>Remove the old vbm5 folder</li>
           <li>Copy or link the vbm5 folder to the spm5/toolbox directory</li>
           </ul>
           You can start the toolbox by choosing "vbm5" in the "Toolbox" selector.<br/>
-          A preliminary manual can be found here <a href="http://141.35.69.218/VBM5.1-Manual.pdf">VBM5.1-Manual</a>.<br/>
+          A preliminary manual can be found here <a href="http://14.35.69.218/VBM5.1-Manual.pdf">VBM5.1-Manual</a>.<br/>
           <h4>VBM2 Toolbox version 1.09 (for SPM2)</h4>
-          Download <a href="http://141.35.69.218/vbm2_v1.09.zip">vbm2_v1.09.zip</a>.<br/>
+          Download <a href="http://14.35.69.218/vbm2_v1.09.zip">vbm2_v1.09.zip</a>.<br/>
           <p>Unpack the zip-file. Now, you have two options for using VBM2 within SPM:<br/>
           First (and recommended), you can copy or link the vbm2 folder to the spm2/toolbox directory. You can start the toolbox by selecting "vbm2" from the toolbox button on the SPM interface after restarting spm.<br/>
           Secondly, you can add the vbm2 folder to your matlab path and can start from the matlab prompt with the command "spm_vbm2".</p>
@@ -207,6 +213,7 @@
         </div>
       </section>
 
+      </div>
     </div>
 
     <!-- Copyright -->

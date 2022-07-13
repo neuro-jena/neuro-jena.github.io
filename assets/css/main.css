@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video, research.
+section, summary, time, mark, audio, video, research,
 publications, software, people {
   margin: 0;
   padding: 0;
@@ -1600,10 +1600,10 @@ input, select, textarea {
 /* Image */
 
   .image {
-    border-radius: 8px;
     border: 0;
     display: inline-block;
     position: relative;
+    margin: 0 0 2em 2em;
   }
 
     .image img {
@@ -1611,25 +1611,32 @@ input, select, textarea {
       display: block;
     }
 
-    .image.left, .image.right {
-      max-width: 25%;
+    .image.rounded {
+      -webkit-border-radius: 1em;
+      -moz-border-radius: 1em;
+      -o-border-radius:1em;
+      border-radius: 1em;
+    }
+
+    .image.small {
+      max-width: 20%;
+    }
+    
+    .image.left {
+      float: left;
+      top: 0.25em;
+      right: 1.25em;
+    }
+
+    .image.right {
+      float: right;
+      top: 0.25em;
+      left: 1.25em;
     }
 
       .image.left img, .image.right img {
         width: 100%;
       }
-
-    .image.left {
-      float: left;
-      padding: 0 1.5em 1em 0;
-      top: 0.25em;
-    }
-
-    .image.right {
-      float: right;
-      padding: 0 0 1em 1.5em;
-      top: 0.25em;
-    }
 
     .image.fit {
       display: block;
@@ -1989,6 +1996,22 @@ input, select, textarea {
     text-align: justify;
   }
 
+  .panel {
+    position: relative;
+    text-align: justify;
+    padding: 3em 0 3em 0;
+    top: -4em;
+    color: rgba(25, 25, 25, 0.75);
+  }
+
+    .panel.right {
+      text-align: right;
+    }
+
+    .panel.left {
+      text-align: left;
+    }
+
     .wrapper .title {
       position: absolute;
       top: 0;
@@ -2047,115 +2070,41 @@ input, select, textarea {
         color: #222;
       }
 
+    .panel.style2 {
+      background: #ccdce8 url("images/overlay.png");
+    }
+
     .wrapper.style2 {
       background: #ccdce8 url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
-      text-align: right;
+      margin: -4em 0 2em 0;
     }
-
-      .wrapper.style2 .title {
-        background: #ccdce8 url("images/overlay.png");
-        color: #fff;
-      }
 
     .wrapper.style21 {
-      background: #d8e5f0 url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
+      background: #dcecf8 url("images/overlay.png");
+      margin: -4em 0 2em 0;
     }
 
-      .wrapper.style21 .title {
-        background: #d8e5f0 url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style3 {
+    .panel.style3 {
       background: #ebecf4 url("images/overlay.png");
       color: #eee;
       color: rgba(25, 25, 25, 0.75);
     }
 
-      .wrapper.style3 .title {
-        background: #ebecf4 url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style31 {
-      color: #fff;
-      color: rgba(25, 25, 25, 0.75);
-    }
-
-      .wrapper.style31 .title {
-        background: #fff url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style4 {
+    .panel.style4 {
       background: #ccdce8 url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
     }
 
-      .wrapper.style4 .title {
-        background: #ccdce8 url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style41 {
-      background: #d8e5f0 url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
-    }
-
-      .wrapper.style41 .title {
-        background: #d8e5f0 url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style5 {
+    .panel.style5 {
       background: #cdc4bc url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
     }
-
-      .wrapper.style5 .title {
-        background: #cdc4bc url("images/overlay.png");
-        color: #fff;
-      }
-
-    .wrapper.style51 {
-      background: #d9d2cc url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
-    }
-
-      .wrapper.style51 .title {
-        background: #d9d2cc url("images/overlay.png");
-        color: #fff;
-      }
 
     .wrapper.style6 {
       background: #e8cccc url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
     }
-
-      .wrapper.style6 .title {
-        background: #e8cccc url("images/overlay.png");
-        color: #fff;
-      }
 
     .wrapper.style7 {
       background: #e8e5cc url("images/overlay.png");
-      color: #eee;
-      color: rgba(25, 25, 25, 0.75);
     }
-
-      .wrapper.style7 .title {
-        background: #e8e5cc url("images/overlay.png");
-        color: #fff;
-      }
 
 /* Page Wrapper */
 
@@ -2517,6 +2466,7 @@ input, select, textarea {
     }
 
 /* Main */
+
 
 /* Footer */
 
