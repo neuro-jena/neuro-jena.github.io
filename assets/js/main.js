@@ -1,237 +1,266 @@
 /*
-	Indivisible by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+  Escape Velocity by Pixelarity with some 
+  functions from Indivisible
+  pixelarity.com | hello@pixelarity.com
+  License: pixelarity.com/license
 */
 
 (function($) {
 
-	var	$window = $(window),
-		$document = $(document),
-		$body = $('body'),
-		$wrapper = $('#wrapper'),
-		$panels = $wrapper.children('.panel'),
-		$animatedLinks = $('.actions.animated a'),
-		$animatedLink = null;
-
-	// Breakpoints.
-		breakpoints({
-			xlarge:  [ '1281px',  '1680px' ],
-			large:   [ '981px',   '1280px' ],
-			medium:  [ '737px',   '980px'  ],
-			small:   [ null,      '736px'  ]
-		});
-
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload-0');
+  var $window = $(window),
+    $document = $(document),
+    $body = $('body'),
+    $wrapper = $('#wrapper'),
+    $panels = $wrapper.children('.panel'),
+    $animatedLinks = $('.actions.animated a'),
+    $animatedLink = null;
+
+  // Breakpoints.
+    breakpoints({
+      xlarge:  [ '1281px',  '1680px' ],
+      large:   [ '981px',   '1280px' ],
+      medium:  [ '737px',   '980px'  ],
+      small:   [ null,      '736px'  ]
+    });
+
+  // Play initial animations on page load.
+    $window.on('load', function() {
+      window.setTimeout(function() {
+        $body.removeClass('is-preload-0');
+
+        window.setTimeout(function() {
+          $body.removeClass('is-preload-1');
+        }, 1500);
+      }, 100);
+    });
+
+  // Dropdowns.
+    $('#nav > ul').dropotron({
+      mode: 'fade',
+      noOpenerFade: true,
+      alignment: 'center',
+      detach: false
+    });
+
+  // Nav.
+
+    // Title Bar.
+      $(
+        '<div id="titleBar">' +
+          '<a href="#navPanel" class="toggle"></a>' +
+          '<span class="title">' + $('#logo h1').html() + '</span>' +
+        '</div>'
+      )
+        .appendTo($body);
+
+    // Panel.
+      $(
+        '<div id="navPanel">' +
+          '<nav>' +
+            $('#nav').navList() +
+          '</nav>' +
+        '</div>'
+      )
+        .appendTo($body)
+        .panel({
+          delay: 500,
+          hideOnClick: true,
+          hideOnSwipe: true,
+          resetScroll: true,
+          resetForms: true,
+          side: 'left',
+          target: $body,
+          visibleClass: 'navPanel-visible'
+        });
+
+  // Animated links.
+    $animatedLinks
+      .on('click', function(event) {
+
+        var href = $(this).attr('href');
+
+        // Not a panel link? Bail.
+          if (href.charAt(0) != '#'
+          ||  (href.length > 1 && $panels.filter(href).length == 0))
+            return;
+
+        // Prevent default.
+          event.preventDefault();
+          event.stopPropagation();
+
+        // Change panels.
+          window.location.hash = '';
+          window.location.hash = href;
+
+        // Set animated link.
+          $animatedLink = $(this);
+
+      });
+
+  // Panels.
+    var locked = true;
+
+    // Fix images.
+      $panels.each(function() {
+
+        var $this = $(this),
+          $image = $this.children('.image'),
+          $img = $image.find('img'),
+          position = $img.data('position');
 
-				window.setTimeout(function() {
-					$body.removeClass('is-preload-1');
-				}, 1500);
-			}, 100);
-		});
+        // Set background.
+          $image.css('background-image', 'url(' + $img.attr('src') + ')');
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			mode: 'fade',
-			noOpenerFade: true,
-			alignment: 'center',
-			detach: false
-		});
+        // Set position (if set).
+          if (position)
+            $image.css('background-position', position);
 
-	// Nav.
+        // Hide original.
+          $img.hide();
 
+      });
 
-	// Animated links.
-		$animatedLinks
-			.on('click', function(event) {
+    // Unlock after a delay.
+      window.setTimeout(function() {
+        locked = false;
+      }, 1250);
 
-				var href = $(this).attr('href');
+    // Hashchange event.
+      $window.on('hashchange', function(event) {
 
-				// Not a panel link? Bail.
-					if (href.charAt(0) != '#'
-					||	(href.length > 1 && $panels.filter(href).length == 0))
-						return;
+        var $ul,
+          delay = 0,
+          $panel;
 
-				// Prevent default.
-					event.preventDefault();
-					event.stopPropagation();
+        // Get panel.
+          if (window.location.hash && window.location.hash != '#')
+            $panel = $(window.location.hash);
+          else
+            $panel = $panels.first();
 
-				// Change panels.
-					window.location.hash = '';
-					window.location.hash = href;
+        // Prevent default.
+          event.preventDefault();
+          event.stopPropagation();
 
-				// Set animated link.
-					$animatedLink = $(this);
+        // Locked? Bail.
+          if (locked)
+            return;
 
-			});
+        // Lock.
+          locked = true;
 
-	// Panels.
-		var locked = true;
+        // Animated link?
+          if ($animatedLink) {
 
-		// Fix images.
-			$panels.each(function() {
+            $ul = $animatedLink.parents('ul');
 
-				var	$this = $(this),
-					$image = $this.children('.image'),
-					$img = $image.find('img'),
-					position = $img.data('position');
+            // Activate.
+              $animatedLink.addClass('active');
 
-				// Set background.
-					$image.css('background-image', 'url(' + $img.attr('src') + ')');
+            // Set delay.
+              delay = 250;
 
-				// Set position (if set).
-					if (position)
-						$image.css('background-position', position);
+          }
 
-				// Hide original.
-					$img.hide();
+        // Delay.
+          window.setTimeout(function() {
 
-			});
+            // Deactivate all panels.
+              $panels.addClass('inactive');
 
-		// Unlock after a delay.
-			window.setTimeout(function() {
-				locked = false;
-			}, 1250);
+            // Delay.
+              window.setTimeout(function() {
 
-		// Hashchange event.
-			$window.on('hashchange', function(event) {
+                // Hide all panels.
+                  $panels.hide();
 
-				var $ul,
-					delay = 0,
-					$panel;
+                // Show target panel.
+                  $panel.show();
 
-				// Get panel.
-					if (window.location.hash && window.location.hash != '#')
-						$panel = $(window.location.hash);
-					else
-						$panel = $panels.first();
+                // Reset scroll.
+                  $document.scrollTop(0);
 
-				// Prevent default.
-					event.preventDefault();
-					event.stopPropagation();
+                // Delay.
+                  window.setTimeout(function() {
 
-				// Locked? Bail.
-					if (locked)
-						return;
+                    // Activate target panel.
+                      $panel.removeClass('inactive');
 
-				// Lock.
-					locked = true;
+                    // Animated link?
+                      if ($animatedLink) {
 
-				// Animated link?
- 					if ($animatedLink) {
+                        // Deactivate.
+                          $animatedLink.removeClass('active');
 
- 						$ul = $animatedLink.parents('ul');
+                        // Clear.
+                          $animatedLink = null;
 
-						// Activate.
-							$animatedLink.addClass('active');
+                      }
 
-						// Set delay.
-							delay = 250;
+                    // Unlock.
+                      locked = false;
 
-					}
+                    // IE: Refresh.
+                      $window.triggerHandler('--refresh');
 
-				// Delay.
-					window.setTimeout(function() {
+                    window.setTimeout(function() {
 
-						// Deactivate all panels.
-							$panels.addClass('inactive');
+                    }, 250);
 
-						// Delay.
-							window.setTimeout(function() {
+                  }, 100);
 
-								// Hide all panels.
-									$panels.hide();
+              }, 350);
 
-								// Show target panel.
-									$panel.show();
+          }, delay);
 
-								// Reset scroll.
-									$document.scrollTop(0);
+      });
 
-								// Delay.
-									window.setTimeout(function() {
+    // Initialize.
+      (function() {
 
-										// Activate target panel.
-											$panel.removeClass('inactive');
+        var $panel;
 
-										// Animated link?
-											if ($animatedLink) {
+        // Get panel.
+          if (window.location.hash && window.location.hash != '#')
+            $panel = $(window.location.hash);
+          else
+            $panel = $panels.first();
 
-												// Deactivate.
-													$animatedLink.removeClass('active');
+        // Deactivate + hide all but initial panel.
+          $panels.not($panel)
+            .addClass('inactive')
+            .hide();
 
-												// Clear.
-													$animatedLink = null;
+      })();
 
-											}
+  // IE: Fixes.
+    if (browser.name == 'ie') {
 
-										// Unlock.
-											locked = false;
+      // Layout fixes.
+        $window.on('--refresh', function() {
 
-										// IE: Refresh.
-											$window.triggerHandler('--refresh');
+          // Fix min-height/flexbox.
+            $wrapper.css('height', 'auto');
 
-										window.setTimeout(function() {
+            window.setTimeout(function() {
 
-										}, 250);
+              var h = $wrapper.height(),
+                wh = $window.height();
 
-									}, 100);
+              if (h < wh)
+                $wrapper.css('height', '100vh');
 
-							}, 350);
+            }, 0);
 
-					}, delay);
+        });
 
-			});
+        $window.on('load', function() {
+          $window.triggerHandler('--refresh');
+        });
 
-		// Initialize.
-			(function() {
+      // Disable animated links.
+        $('.actions.animated').removeClass('animated');
 
-				var $panel;
-
-				// Get panel.
-					if (window.location.hash && window.location.hash != '#')
-						$panel = $(window.location.hash);
-					else
-						$panel = $panels.first();
-
-				// Deactivate + hide all but initial panel.
-					$panels.not($panel)
-						.addClass('inactive')
-						.hide();
-
-			})();
-
-	// IE: Fixes.
-		if (browser.name == 'ie') {
-
-			// Layout fixes.
-				$window.on('--refresh', function() {
-
-					// Fix min-height/flexbox.
-						$wrapper.css('height', 'auto');
-
-						window.setTimeout(function() {
-
-							var h = $wrapper.height(),
-								wh = $window.height();
-
-							if (h < wh)
-								$wrapper.css('height', '100vh');
-
-						}, 0);
-
-				});
-
-				$window.on('load', function() {
-					$window.triggerHandler('--refresh');
-				});
-
-			// Disable animated links.
-				$('.actions.animated').removeClass('animated');
-
-		}
+    }
 
 })(jQuery);
