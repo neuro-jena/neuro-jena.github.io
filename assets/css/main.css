@@ -1489,6 +1489,7 @@ input, select, textarea {
 
   table {
     width: 100%;
+    overflow: auto;
   }
 
     table.default {
@@ -1618,10 +1619,22 @@ input, select, textarea {
       border-radius: 1em;
     }
 
+    .image.xsmall {
+      max-width: 15%;
+    }
+
     .image.small {
       max-width: 20%;
     }
     
+    .image.medium {
+      max-width: 50%;
+    }
+
+    .image.large {
+      max-width: 75%;
+    }
+
     .image.left {
       float: left;
       top: 0.25em;
@@ -3180,5 +3193,6 @@ input, select, textarea {
             #copyright ul li:first-child {
               margin-top: 0;
             }
+
 
   }
