@@ -36,10 +36,9 @@
                   <a href="research.html">Research</a>
                   <ul>
                     <li><a href="research.html#methods">Methods for structural brain imaging</a></li>
-                    <li><a href="research.html#schizophrenia">Schizophrenia research</a></li>
-                    <li><a href="research.html#gyrification">Gyrification and cortical measures</a></li>
-                    <li><a href="research.html#classification">Classification of brain structure</a></li>
-                    <li><a href="research.html#development">Development and evolution</a></li>
+                    <li><a href="research.html#brainage">BrainAGE</a></li>
+                    <li><a href="research.html#plasticity">Structural brain plasticity</a></li>
+                    <li><a href="research.html#gyrification">Gyrification and folding measures</a></li>
                   </ul>
                 </li>
                 <li>
@@ -80,29 +79,45 @@
 
         <div class="container">
           <div class="row">
-            <p><a href="research.html#methods"><img class="image left" src="images/overview_3D3_human_brain.jpg" alt=""></a><br/><a href="research.html#methods">Methods for structural brain imaging</a><br/>
-  The development of algorithms and tools for processing of voxel- and surface based imaging data encompasses segmentation, surface reconstruction, correction of topology artifacts and conformal mapping.
+            <p><a href="research.html#methods"><img class="image rounded xsmall left" src="images/methods_small.png" alt=""></a><br/><a href="research.html#methods">Methods for structural brain imaging</a><br/>
+The development of algorithms and tools for processing of voxel- and surface based imaging data encompasses segmentation, surface reconstruction, correction of topology artifacts and conformal mapping.
             </p>
           </div>
         </div>
 
         <div class="container">
           <div class="row">
-            <p><a href="research.html#evolution"><img class="image right" src="images/overview_3D3_diseases.jpg" alt=""></a><br/><a href="research.html#schizophrenia">Schizophrenia research</a><br/>
+            <p><a href="research.html#brainage"><img class="image small right" src="images/BrainAGE-Logo.png" alt=""></a><br/><a href="research.html#brainage">BrainAGE</a><br/>
+The brain age is estimated by looking at brain images from a lot of people and then using that information to estimate the brain age of a new person. The advantage of brain age is that it can show if a person's brain is aging faster or slower than normal. This new method is exciting because it has the potential to help us better understand the aging process. It could also help us develop better interventions to prevent or delay the onset of age-related diseases.
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <p><a href="research.html#plasticity"><img class="image rounded xsmall left" src="images/plasticity_small.png" alt=""></a><br/><a href="research.html#plasticity">Structural brain plasticity</a><br/>
+The brain is able to change its structure in response to experience, which is called brain plasticity. To study brain plasticity, we can use structural MRIs to detect changes in the brain over time. Structural MRIs allow to look at the gross anatomical structure of the brain with a high detail. By looking at how the structure of the brain changes over time, we can learn about how the brain changes in response to learning.
+            </p>
+          </div>
+        </div>
+
+<!--        <div class="container">
+          <div class="row">
+            <p><a href="research.html#schizophrenia"><img class="image right" src="images/overview_3D3_diseases.jpg" alt=""></a><br/><a href="research.html#schizophrenia">Schizophrenia research</a><br/>
   Voxel- and surface based imaging data provide insight into abnormal brain development for certain diseases. The study of morphological differences between healthy subjects and schizophrenic patients might help to clarify the mechanism and progression of the underlying alterations in brain development.
             </p>
           </div>
         </div>
-
+-->
         <div class="container">
           <div class="row">
-            <p><a href="research.html#gyrification"><img class="image left" src="images/overview_3D3_measures.jpg" alt=""></a><br/><a href="research.html#gyrification">Gyrification and cortical measures</a><br/>
-  To study inter-individual differences in brain structure, we intend to develop, improve, or use pre-existing local and global brain measures.Â&nbsp; Some such measures have recently emerged in the field of magnetic resonance brain imaging, including sulcal depth, cortical thickness, and local gyrification indices.
+            <p><a href="research.html#gyrification"><img class="image rounded xsmall right" src="images/folding_small.png" alt=""></a><br/><a href="research.html#gyrification">Gyrification and folding measures</a><br/>
+  To study inter-individual differences in brain structure, we have develop and implemented local and global brain measures. Some such measures have recently emerged in the field of magnetic resonance brain imaging, including sulcal depth, and local gyrification indices.
             </p>
           </div>
         </div>
 
-        <div class="container">
+<!--        <div class="container">
           <div class="row">
             <p><a href="research.html#classification"><img class="image right" src="images/overview_3D3_classification.jpg" alt=""></a><br/><a href="research.html#classification">Schizophrenia research</a><br/>
   Structural brain imaging data can be used to predict the group membership (such as gender or disease) of unknown individuals. Several multivariate analysis and machine learning techniques give a solution for this classification problem. Our emphasis is the application of kernel methods and support vector classification.
@@ -112,12 +127,12 @@
 
         <div class="container">
           <div class="row">
-            <p><a href="research.html#evolution"><img class="image left" src="images/overview_3D3_evolution.jpg" alt=""></a><br/><a href="research.html#evolution">Gyrification and cortical measures</a><br/>
+            <p><a href="research.html#evolution"><img class="image left" src="images/overview_3D3_evolution.jpg" alt=""></a><br/><a href="research.html#evolution">Development and evolution</a><br/>
   We use structural MRI data to investigate age-related (i.e., ontogenetic) changes of brain morphology and also their phylogenetic variation between species.
             </p>
           </div>
         </div>
-
+-->
       </section>
 
       <section id="methods" class="panel style1">
@@ -135,7 +150,40 @@
         </div>
       </section>
 
-      <section id="schizophrenia" class="panel style3">
+      <section id="brainage" class="panel style1">
+        <div class="container">
+          <h3>BrainAGE</h3>
+            <p><img class="image medium right" src="images/brainage_large.png" alt="">
+The brain age is estimated by training a machine learning approach on brain images from a large number of subjects, and then using that trained approach to estimate the brain age of a new subject. The advantage of brain age is that it aggregates the complex, multidimensional aging pattern throughout the whole brain into in one single value. This value is the estimated brain age. If the estimated age is higher than the chronological age, a positive brain age gap estimation (BrainAGE) score indicates accelerated atrophy and is considered a risk factor for conversion to AD.<br/>
+There are many potential applications of this new method of brain age estimation. For example, it could be used to help identify individuals at risk for Alzheimer's disease or other age-related diseases. This new method is exciting because it has the potential to help us better understand the aging process. It could also help us develop better interventions to prevent or delay the onset of age-related diseases.<br/>
+The new method of brain age estimation is a promising new tool that could significantly contribute to understanding the human brain. This new method, which uses structural MRIs to estimate brain age, is already being used by more and more researchers worldwide. The potential applications of this new method are numerous and exciting. This new method has the potential to help us better understand the aging process and identify individuals at risk for age-related diseases. With more research, the new method of brain age estimation could have a major impact on the way we understand and treat age-related diseases.
+            </p>
+          </div>
+      </section>
+
+      <section id="plasticity" class="panel style1">
+        <div class="container">
+          <h3>Structural brain plasticity</h3>
+            <p><img class="image normal right" src="images/music_large.png" alt="">
+Structural brain plasticity refers to the brain's ability to change its physical structure in response to experience. This plasticity is a result of the brain's adaptability to its environment. One way to study brain plasticity is by using structural MRIs to detect changes in the brain over time. Structural MRIs allow to look at the gross anatomical structure of the brain with a high detail. By looking at how the structure of the brain changes over time, scientists can learn about how the brain changes in response to learning.<br/>
+This research topic is important for the field of neuroimaging because it can help us understand how the brain changes in response to different experiences and how this plasticity contributes to brain function.<br/>
+Our findings in the juggler study suggest that the brain is capable of making structural changes in response to environmental demands. This discovery contradicts the traditionally held view that cortical plasticity is associated with functional rather than anatomical changes. The finding that the brain can alter its structure in response to experience has important implications for our understanding of brain plasticity and its role in learning and memory.<br/>
+In our group, we develop tools to analyze these subtle changes that can be seen over time. By understanding how the brain changes in response to experience, we can learn more about how the brain works and how the brain changes in response to learning.
+        </p>
+        </div>
+      </section>
+
+      <section id="gyrification" class="panel style1">
+        <div class="container">
+          <h3>Gyrification and folding measures</h3>
+          <p>The brain surface in healthy human adults is normally highly convoluted, with ridges (gyri) and faults (sulci). <strong>Gyrification</strong> refers to both this folding process and quantitative measures thereof. Given that abnormal gyrification patterns have been found in patients with schizophrenia and other neuropsychiatric disorders, we develop methods, based on structural MRI scans, to measure gyrification automatically on both local and whole-brain levels. We hope that these methods may eventually contribute to an earlier diagnosis and for monitoring patients during the therapeutic phase. The gyrification of the the cortex can be measured by curvature, as a relation between different cortical surfaces for the global brain, or as the relation between the curves of these surface in a slice.</p>
+          <p>The<strong> depth of sulci </strong>can be measured based on a hull surface which surrounds the whole brain and gives additional information on the convolution of the brain. Like thickness measures, sulcal depth also allows different definitions.</p>
+          <p style="text-align: center;"><img class="align-center" src="images/gyrification_index.en.jpg" alt="" width="500" height="155" /></p>
+          <p style="text-align: center;"><img loading="lazy" class="align-center" src="images/cortical_measures.en.jpg" alt="" width="500" height="221" /></p>
+        </div>
+      </section>
+
+<!--      <section id="schizophrenia" class="panel style3">
         <div class="container">
           <h3>Schizophrenia research</h3>
           <p>Schizophrenia is a complex disorder. The cause of schizophrenia lies in a complex interaction between genes and environment. Genetic variation could lead to altered brain structure and/or function. These changes could predispose a person to developing schizophrenia in the face of environmental stressors. MRI of the brain provides a way to detect changes in brain structure due to genetic effects and those due to disease progression.<br/>
@@ -144,18 +192,6 @@ Patients with schizophrenia have reduced grey matter volume and altered white ma
 
 Formation of gyri and sulci begin at the age of 16 weeks in utero in humans. Genetic variation may affect rates of grey matter and white matter development thus affecting formation of gyri. As some genes implicated in schizophrenia affect the development of the brain, these may result in abnormal gyrification. Measuring cortical gyrification in healthy twins and twins discordant for schizophrenia (i.e., one twin has schizophrenia while the cotwin is healthy) can help us differentiate between genetic effects and disease effects on cortical gyrification in schizophrenia.
           </p>
-        </div>
-      </section>
-
-      <section id="gyrification" class="panel style1">
-        <div class="container">
-          <h3>Gyrification and cortical measures</h3>
-          <p>There are a variety of morphometric measures to describe the cortex, such as thickness, area, volume, and curvature.Â  In our lab,Â  we focus on local, surface-based methods.</p>
-          <p>The <strong>cortical thickness</strong> measure can be applied to studies of Alzheimer&#8217;s dementia, schizophrenia, brain development, and aging. The fundamental problem is that there are different approaches to estimating cortical thickness, which produce significantly different results. Thickness measurement methods can be divided into three categories: voxel-, surface- and gradient-based. The estimation of cortical thickness is part of our central surface reconstruction process.</p>
-          <p>The brain surface in healthy human adults is normally highly convoluted, with ridges (gyri) and faults (sulci). <strong>Gyrification</strong> refers to both this folding process and quantitative measures thereof. Given that abnormal gyrification patterns have been found in patients with schizophrenia and other neuropsychiatric disorders, we develop methods, based on structural MRI scans, to measure gyrification automatically on both local and whole-brain levels. We hope that these methods may eventually contribute to an earlier diagnosis and for monitoring patients during the therapeutic phase. The gyrification of the the cortex can be measured by curvature, as a relation between different cortical surfaces for the global brain, or as the relation between the curves of these surface in a slice.</p>
-          <p>The<strong> depth of sulci </strong>can be measured based on a hull surface which surrounds the whole brain and gives additional information on the convolution of the brain. Like thickness measures, sulcal depth also allows different definitions.</p>
-          <p style="text-align: center;"><img class="align-center" src="images/gyrification_index.en.jpg" alt="" width="500" height="155" /></p>
-          <p style="text-align: center;"><img loading="lazy" class="align-center" src="images/cortical_measures.en.jpg" alt="" width="500" height="221" /></p>
         </div>
       </section>
 
@@ -174,8 +210,8 @@ Formation of gyri and sulci begin at the age of 16 weeks in utero in humans. Gen
           <p style="text-align: center;"><img class="align-center" src="images/evolution.en.jpg" alt="" width="500" height="639"></p>
         </div>
       </section>
+-->      
 
-    </div>
     </div>
 
     <!-- Copyright -->

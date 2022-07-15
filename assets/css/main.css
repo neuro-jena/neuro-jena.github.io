@@ -1627,6 +1627,10 @@ input, select, textarea {
       max-width: 20%;
     }
     
+    .image.normal {
+      max-width: 35%;
+    }
+
     .image.medium {
       max-width: 50%;
     }
@@ -1647,7 +1651,12 @@ input, select, textarea {
       left: 1.25em;
     }
 
-      .image.left img, .image.right img {
+    .image.center {
+      float: center;
+      top: 0.25em;
+    }
+
+      .image.left img, .image.right img, .image.center img {
         width: 100%;
       }
 
