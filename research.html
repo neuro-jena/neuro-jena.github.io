@@ -44,12 +44,10 @@
                 <li>
                   <a href="publications.html">Publications</a>
                   <ul>
-                    <li><a href="publications.html#2017">2017-</a></li>
-                    <li><a href="publications.html#2013_2016">2013-2016</a></li>
-                    <li><a href="publications.html#2009_2012">2009-2012</a></li>
-                    <li><a href="publications.html#2005_2008">2005-2008</a></li>
-                    <li><a href="publications.html#2001_2004">2001-2004</a></li>
-                    <li><a href="publications.html#1997_2000">1997-2000</a></li>
+                    <li><a href="publications.html#2021">2021-</a></li>
+                    <li><a href="publications.html#2013_2020">2013-2020</a></li>
+                    <li><a href="publications.html#2005_2012">2005-2012</a></li>
+                    <li><a href="publications.html#1997_2004">1997-2004</a></li>
                     <li><a href="publications.html#books">Books and bookchapters</a></li>
                     <li><a href="publications.html#abstracts">Full length abstracts in series, books or proceedings</a></li>
                   </ul>
@@ -87,7 +85,7 @@ The development of algorithms and tools for processing of voxel- and surface bas
 
         <div class="container">
           <div class="row">
-            <p><a href="research.html#brainage"><img class="image small right" src="images/BrainAGE-Logo.png" alt=""></a><br/><a href="research.html#brainage">BrainAGE</a><br/>
+            <p><a href="research.html#brainage"><img class="image xsmall right" src="images/brainage_small.png" alt=""></a><br/><a href="research.html#brainage">BrainAGE</a><br/>
 Brain age is estimated by looking at brain images from a large number of subjects and then using that information to estimate the brain age of a new subject. The advantage of brain age is that it can show if a person's brain is aging faster or slower than normal. This new method is exciting because it has the potential to help us better understand the aging process.
             </p>
           </div>
@@ -147,29 +145,260 @@ The brain surface in healthy human adults is normally highly convoluted, with gy
           <p style="text-align: center;"><img loading="lazy" class="align-center" src="images/topology_correction.en.jpg" alt="" width="500" height="166" /></p>
           <p>A common processing step for cortical surfaces is to map the cortical surface mesh to a spherical surface for improved brain registration and advanced analytical techniques. The ideal spherical mapping is isometric - all angles and areas are preserved. Such a mapping potentially improves the quality of subsequent processing steps. However, there is a trade-off between angle and area distortion when mapping the cortical surface to a sphere. Our lab has developed a fast new method to generate a pseudo-isometric <strong>spherical mapping of the cortical surface</strong>. The initial spherical map is a conformal map produced via the Laplace-Beltrami operator optimized with a Möbius transformation (in figure, LB). The conformal map is then post-processed using a processing pipeline consisting of in-house algorithms designed to reduce area distortion (in figure, Iso). The spherical maps generated using our method have low area and angular distortion.</p>
           <p style="text-align: center;"><img loading="lazy" class="align-center" src="images/conformal_mapping.en.jpg" alt="" width="500" height="372" /></p>
+        <div class="container">
+          <h3>Relevant papers</h3>
+          <p>Gaser C, Dahnke R, Thompson PM, Kurth F, Luders E.<br />
+          CAT – A Computational Anatomy Toolbox for the Analysis of Structural MRI Data.<br />
+          <em>BioRxiv</em>, in press. <a href="pdf/Gaser-bioRxiv22.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+                    
+          <p>Luders E, Dahnke R, Gaser C.<br />
+          To smooth or not to smooth: One step closer to single-voxel accuracy without spatial smoothing.<br />
+          <em>BioRxiv</em>, in press. <a href="pdf/Luders-bioRxiv22.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Brodoehl S, Gaser C, Dahnke R, Witte OW, Klingner CM.<br />
+          Surface-based analysis increases the specificity of cortical activation patterns and connectivity results.<br />
+          <em>Sci Rep.</em> 2020 <strong>10 (1)</strong>, 1-13 <a href="pdf/Brodoehl-SR20.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Schmidt P, Pongratz V, Küster P, Meier D, Wuerfel J, Lukas C, Bellenberg B, Zipp F, Groppa S, Sämann PG, Weber F, Gaser C, Franke T, Bussas M, Kirschke J, Zimmer C, Hemmer B, Mühlau M.<br />
+          Automated segmentation of changes in FLAIR-hyperintense white matter lesions in multiple sclerosis on serial magnetic resonance imaging.<br />
+          <em>NeuroImage: Clin.</em> 2019 <strong>23</strong>, 101849 <a href="pdf/Schmidt-NIC19.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>F. Kurth, C. Gaser, E. Luders.<br>A 12-step user guide for analyzing voxel-wise gray matter asymmetries in statistical parametric mapping (SPM).<br><em>Nature Protocols</em>, <strong>10</strong>: 293-304, 2015. <a href="pdf/Kurth-NP15.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>P. Schmidt, V.J. Schmid, C. Gaser, D. Buck, S. Bührlen, A. Föschler, M. Mühlau.<br>Fully Bayesian inference for structural MRI: application to segmentation and statistical analysis of T2-hypointensities in healthy subjects.<br><em>PLoS ONE</em>, <strong>8(7)</strong>: e68196, 2013. <a href="pdf/Schmidt-PLOS13.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>R. Dahnke, R. Yotter, <u>C. Gaser</u>.<br />
+          Cortical thickness and central surface estimation.<br />
+          <em>Neuroimage</em>, <strong>65</strong>: 336-348, 2012. <a href="pdf/Dahnke-NI12.pdf" target="_blank">PDF</a></p>
+          
+          <p><u>C. Gaser</u>, S. Schmidt, M. Metzler, K.-H. Herrmann, I. Krumbein, J.R. Reichenbach, O.W. Witte.<br />
+          Deformation-based brain morphometry in rats.<br />
+          <em>NeuroImage</em>, <strong>63(1)</strong>: 47-53, 2012. <a href="pdf/Gaser-NI12.pdf" target="_blank">PDF</a></p>
+          
+          <p>P. Schmidt, <u>C. Gaser</u>, M. Arsic, D. Buck, A. Förschler, A. Berthele, M. Hoshi, R. Ilg, V.J. Schmid, C. Zimmer, B. Hemmer, M. Mühlau.<br />
+          An automated tool for detection of FLAIR-hyperintense white-matter lesions in Multiple Sclerosis.<br />
+          <em>Neuroimage</em>, <strong>59(4)</strong>: 3774-83, 2012. <a href="pdf/Schmidt-NI11.pdf" target="_blank">PDF</a></p>
+          
+          <p>R.A. Yotter, G. Ziegler, I. Nenadic, P.M. Thompson, <u>C. Gaser</u><br />
+          Local cortical surface complexity maps from spherical harmonic reconstructions.<br />
+          <em>Neuroimage</em>, <strong>56(3)</strong>: 961-973, 2011. <a href="pdf/Yotter-NI11.pdf" target="_blank">PDF</a></p>
+          
+          <p>R.A. Yotter, R. Dahnke, P.M. Thompson, <u>C. Gaser</u>.<br />
+          Topological Correction of Brain Surface Meshes Using Spherical Harmonics.<br />
+          <em>Human Brain Mapping</em>, <strong>32(7)</strong>: 1109-24, 2011. <a href="pdf/Yotter-HBM10.pdf" target="_blank">PDF</a></p>
+          
+          <p>R.A. Yotter, P.M. Thompson, <u>C. Gaser</u>.<br />
+          Algorithms to Improve the Re-Parameterization of Spherical Mappings of Brain.<br />
+          <em>Journal of Neuroimaging</em>, <strong>21(2)</strong>:e134-47, 2011. <a href="pdf/Yotter-JoN10.pdf" target="_blank">PDF</a></p>
+          
+          <p>R.A. Yotter, P.M. Thompson, I. Nenadic, <u>C. Gaser</u>.<br />
+          Estimating local surface complexity maps using spherical harmonic reconstructions.<br />
+          <em>Med Image Comput Comput Assist Interv</em>, <strong>13(2)</strong>: 169–176, 2010. <a href="pdf/Yotter-MICCAI10.pdf" target="_blank">PDF</a></p>
+
+          <p>R.A. Yotter, R. Dahnke, <u>C. Gaser</u>.<br />
+          Topological Correction of Brain Surface Meshes Using Spherical Harmonics.<br />
+          <em>Med Image Comput Comput Assist Interv</em>, <strong>12(2)</strong>: 125–132, 2009. <a href="pdf/Yotter-MICCAI09.pdf" target="_blank">PDF</a></p>
+          
+          <p>M. Altaye, S.K. Holland, M. Wilke, <u>C. Gaser</u>.<br />
+          Infant Brain Probability Templates for MRI Segmentation and Normalization.<br />
+          <em>Neuroimage</em>, <strong>43</strong>: 721-730, 2008. <a href="pdf/Altaye-NI08.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p>M. Wilke, S.K. Holland, M. Altaye, <u>C. Gaser</u>.<br />
+          Template-O-Matic: A toolbox for creating customized pediatric templates.<br />
+          <em>Neuroimage</em>, <strong>41(3)</strong>: 903-913, 2008. <a href="pdf/Wilke-NI08.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
         </div>
       </section>
 
       <section id="brainage" class="panel style1">
         <div class="container">
           <h3>BrainAGE</h3>
-            <p><img class="image medium right" src="images/brainage_large.png" alt="">
-Brain age is estimated by training a machine learning approach on brain images from a large number of subjects, and then using that trained approach to estimate the brain age of a new subject. The advantage of brain age is that it aggregates the complex, multidimensional aging pattern throughout the whole brain into in one single value. This value is the estimated brain age. If the estimated age is higher than the chronological age, a positive brain age gap estimation (BrainAGE) score indicates accelerated atrophy and is considered a risk factor for conversion to AD.<br/>
-There are many potential applications of this new method of brain age estimation. For example, it could be used to help identify individuals at risk for Alzheimer's disease or other age-related diseases. It could also help us develop better interventions to prevent or delay the onset of age-related diseases.<br/>
-This new method is already being used by more and more researchers worldwide and has the potential to help us better understand the aging process and identify individuals at risk for age-related diseases.
-            </p>
-          </div>
+          <p><img class="image medium right" src="images/brainage_large.png" alt="">
+          Brain age is estimated by training a machine learning approach on brain images from a large number of subjects, and then using that trained approach to estimate the brain age of a new subject. The advantage of brain age is that it aggregates the complex, multidimensional aging pattern throughout the whole brain into in one single value. This value is the estimated brain age. If the estimated age is higher than the chronological age, a positive brain age gap estimation (BrainAGE) score indicates accelerated atrophy and is considered a risk factor for conversion to AD.<br/>
+          There are many potential applications of this new method of brain age estimation. For example, it could be used to help identify individuals at risk for Alzheimer's disease or other age-related diseases. It could also help us develop better interventions to prevent or delay the onset of age-related diseases.<br/>
+          This new method is already being used by more and more researchers worldwide and has the potential to help us better understand the aging process and identify individuals at risk for age-related diseases.
+        </p>
+        <div class="container">
+          <h3>Relevant papers</h3>
+          <p>Giannakopoulos P, Montandon ML, Herrmann FR, Hedderich D, Gaser C, Kellner E, Rodriguez C, Haller S..<br />
+          Alzheimer resemblance atrophy index, BrainAGE, and normal pressure hydrocephalus score in the prediction of subtle cognitive decline: added value compared to existing MR imaging markers..<br />
+          <em>Eur Radiol.</em>, in press. <a href="pdf/Giannakopoulos-ER22.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p>Hahn T, Ernsting J, Winter NR, Holstein V, Leenings R, Beisemann M, Fisch L, Sarink K, Emden D, Opel N, Redlich R, Repple J, Grotegerd D, Meinert S, Hirsch JG, Niendorf T, Endemann B, Bamberg F, Kröncke T, Bülow R, Völzke H, von Stackelberg O, Sowade RF, Umutlu L, Schmidt B, Caspers S, Kugel H, Kircher T, Risse B, Gaser C, Cole JH, Dannlowski U, Berger K.<br />
+          An uncertainty-aware, shareable, and transparent neural network architecture for brain-age modeling.<br />
+          <em>Sci Adv.</em> 2022 <strong>8(1)</strong>:eabg9471. <a href="pdf/Hahn-SA22.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Cherbuin N, Walsh EI, Shaw M, Luders E, Anstey KJ, Sachdev PS, Abhayaratna WP, Gaser C.<br />
+          Optimal Blood Pressure Keeps Our Brains Younger.<br />
+          <em>Front Aging Neurosci.</em> 2021 <strong>13</strong>:694982. <a href="pdf/Cherbuin-FrAN21.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Bittner N, Jockwitz C, Franke K, Gaser C, Moebus S, Bayen UJ, Amunts K, Caspers S.<br />
+          When your brain looks older than expected: combined lifestyle risk and BrainAGE.<br />
+          <em>Brain Struct Funct.</em> 2021 <strong>226(3)</strong>:621-645<a href="pdf/Bittner-BSaF21.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Fisch L, Leenings R, Winter NR, Dannlowski U, Gaser C, Cole JH, Hahn T.<br />
+          Editorial: Predicting Chronological Age From Structural Neuroimaging: The Predictive Analytics Competition 2019.<br />
+          <em>Front. Psychiatry</em>. 2021 <strong>12</strong>:710932 <a href="pdf/Fisch-FP21.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Hedderich DM, Menegaux A, Schmitz-Koep B, Nuttall R, Zimmermann J, Schneider SC, Bäuml JG, Daamen M, Boecker H, Wilke M, Zimmer C, Wolke D, Bartmann P, Sorg C, Gaser C.<br />
+          Increased Brain Age Gap Estimate (BrainAGE) in Young Adults After Premature Birth.<br />
+          <em>Front Aging Neurosci.</em> 2021 <strong>13</strong>:653365<a href="pdf/Hedderich-FAN21.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Delvecchio G, Maggioni E, Pigoni A, Crespo-Facorro B, Nenadic I, Benedetti F, Gaser C, Sauer H, Roiz-Santiañez R, Poletti S, Rossetti MG, Bellani M, Perlini C, Ruggeri M, Diwadkar VA, Brambilla P.<br />
+          Sexual Regional Dimorphism of Post-Adolescent and Middle Age Brain Maturation. A Multi-center 3T MRI Study.<br />
+          <em>Front Aging Neurosci.</em> 2021 <strong>13</strong>:622054<a href="pdf/Delveccio-FAN21.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Seidel G, Gaser C, Götz T, Günther A, Hamzei F.<br />
+          Accelerated brain ageing in sepsis survivors with cognitive long-term impairment.<br />
+          <em>Eur J Neurosci.</em> 2020 <strong>52(10)</strong>:4395-4402<a href="pdf/Seidel-EJN20.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Franke K, Bublak P, Hoyer D, Billiet T, Gaser C, Witte OW, Schwab M.<br />
+          In vivo biomarkers of structural and functional brain development and aging in humans.<br />
+          <em>Neurosci Biobehav Rev.</em> 2020 <strong>117</strong>:142-164<a href="pdf/Franke-NBR21.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Franke K, Gaser C.<br />
+          Ten years of BrainAGE as a neuroimaging biomarker of brain aging: What insights have we gained?<br />
+          <em>Front Neurol</em>. 2019 <strong>10</strong>, 789 <a href="pdf/Franke-FN19.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Besteher B, Gaser C, Nenadic I.<br />
+          Machine-learning based brain age estimation in major depression showing no evidence of accelerated aging.<br />
+          <em>Psychiatry Res Neuroimaging</em> 2019 <strong>290</strong>, 1-4 <a href="pdf/Besteher-PRN19.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Hedderich DM, Bäuml JG, Berndt MT, Menegaux A, Scheef L, Daamen M, Zimmer C, Bartmann P, Boecker H, Wolke D, Gaser C, Sorg C.<br />
+          Aberrant gyrification contributes to the link between gestational age and adult IQ after premature birth.<br />
+          <em>Brain.</em> 2019 <strong>142 (5)</strong>, 1255-1269 <a href="pdf/Hedderich-Brain19.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Rogenmoser L, Kernbach J, Schlaug G, Gaser C.<br />
+          Keeping brains young with making music.<br />
+          <em>Brain Struct Funct. </em>2018 <strong>223(1)</strong>:297-305 <a href="pdf/Rogenmoser-BSF17.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Luders E, Gingnell M, Poromaa IS, Engman J, Kurth F, Gaser C.<br />
+          Potential Brain Age Reversal after Pregnancy: Younger Brains at 4-6 Weeks Postpartum.<br />
+          <em>Neuroscience </em>2018 <strong>386</strong>: 309-314 <a href="pdf/Luders-NS18.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Franke K, Gaser C, Roseboom TJ, Schwab M, de Rooij SR.<br />
+          Premature brain aging in humans exposed to maternal nutrient restriction during early gestation.<br />
+          <em>Neuroimage. </em>2018 <strong>173</strong>:460-471 <a href="pdf/Franke-NI17.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Scheller E, Schumacher LV, Peter J, Lahr J, Wehrle J, Kaller CP, Gaser C, Klöppel S.<br />
+          Brain Aging and APOE e4 Interact to Reveal Potential Neuronal Compensation in Healthy Older Adults.<br />
+          <em>Front Aging Neurosci. </em>2018 <strong>10</strong>: 74 <a href="pdf/Scheller-FNAGI18.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Nenadic I, Dietzek M, Langbein K, Sauer H, Gaser C.<br />
+          BrainAGE score indicates accelerated brain aging in schizophrenia, but not bipolar disorder.<br />
+          <em>Psychiatry Res. </em>2017 <strong>266</strong>: 86-89 <a href="pdf/Nenadic-PRNI17-2.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Franke K, Clarke GD, Dahnke R, Gaser C, Kuo AH, Li C, Schwab M, Nathanielsz PW.<br />
+          Premature Brain Aging in Baboons Resulting from Moderate Fetal Undernutrition.<br />
+          <em>Front Aging Neurosci. </em>2017 <strong>9</strong>: 92 <a href="pdf/Franke-FNAGI17.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>L. C. Loewe, C. Gaser, K. Franke, Alzheimer&#8217;s Disease Neuroimaging Initiative.<br>The Effect of the APOE Genotype on Individual BrainAGE in Normal Aging, Mild Cognitive Impairment, and Alzheimer’s Disease.<br><em>PLoS ONE</em>, <strong>11(7)</strong>: e015754, 2016. <a href="pdf/Loewe-PLOS16.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>E. Luders, N. Cherbuin, C. Gaser.<br>Estimating brain age using high-resolution pattern recognition: Younger brains in long-term meditation practitioners.<br><em>Neuroimage</em>, <strong>134</strong>: 508-53, 2016. <a href="pdf/Luders-NI16.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>K. Franke, G. Hagemann, E. Schleussner, C. Gaser.<br>Changes of individual BrainAGE during the course of the menstrual cycle.<br><em>NeuroImage</em>, <strong>115</strong>: 1-6, 2015. <a href="pdf/Franke-NI15.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>E.E. Bron, M. Smits, W.M. van der Flier, H. Vrenken, F. Barkhof, P. Scheltens, J.M. Papma, R.M.E. Steketee, C. Méndez Orellana, R. Meijboom, M. Pinto, J.R. Meireles, C. Garrett, A.J. Bastos-Leite, A. Abdulkadir, O. Ronneberger, N. Amoroso, R. Bellotti, D. Cárdenas-Peña, A.M. Álvarez-Meza, C.V. Dolph, K.M. Iftekharuddin, S.F. Eskildsen, P. Coupé, V.S. Fonov, K. Franke, C. Gaser, C. Ledig, R. Guerrero, T. Tong, K.R. Gray, E. Moradi, J. Tohka, A. Routier, S. Durrleman, A. Sarica, G. Di Fatta, F. Sensi, A. Chincarini, G.M. Smith, Z.V. Stoyanov, L. Sørensen, M. Nielsen, S. Tangaro, P. Inglese, C. Wachinger, M. Reuter, J.C. van Swieten, W.J. Niessen, S. Klein<br>Standardized evaluation of algorithms for computer-aided diagnosis of dementia based on structural MRI: The CADDementia challenge.<br><em>NeuroImage</em>, <strong>111</strong>: 562-579, 2015. <a href="pdf/Bron-NI15.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>K. Franke, M. Ristow, C. Gaser.<br>Gender-specific impact of personal health parameters on individual brain aging in cognitively unimpaired elderly subjects.<br><em>Front Aging Neurosci</em>, <strong>6</strong>: 94, 2014. <a href="pdf/Franke-FNAGI14.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>N. Koutsouleris, C. Davatzikos, S. Borgwardt, C. Gaser, R. Bottlender, T. Frodl, P. Falkai, A. Riecher-Rössler, H.-J. Möller, M. Reiser, C. Pantelis, E.M. Meisenzahl.<br>Accelerated Brain Aging in Schizophrenia and Beyond: A Neuroanatomical Marker of Psychiatric Disorders.<br><em>Schizophrenia Bulletin</em>, <strong>40(5)</strong>: 1140-1153, 2014. <a href="pdf/Koutsouleris-SB13.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>K. Franke, C. Gaser, B. Manor, V. Novak.<br>Advanced BrainAGE in older adults with type 2 diabetes mellitus.<br><em>Front Aging Neurosci</em>, <strong>5</strong>: 90, 2013. <a href="pdf/Franke-FNAGI13.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>C. Gaser, K. Franke, S. Klöppel, N. Koutsouleris, H. Sauer, Alzheimer&#8217;s Disease Neuroimaging Initiative.<br>BrainAGE in mild cognitive impaired patients: predicting the conversion to Alzheimer’s disease.<br><em>PLoS ONE</em>, <strong>8(6)</strong>: e67346, 2013. <a href="pdf/Gaser-PLOS13.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>K. Franke, <u>C. Gaser</u>.<br />
+          Longitudinal changes in individual BrainAGE in healthy aging, mild cognitive impairment, and Alzheimer&#8217;s disease.<br />
+          <em>The Journal of Gerontopsychology and Geriatric Psychiatry</em>,  <strong>25(4)</strong>: 235-245, 2012. <a href="pdf/Franke-GeroPsych12.pdf" target="_blank">PDF</a><br />
+          <a href="pdf/SupplementGeroPsych.pdf" target="_blank">Color figures</a></p>
+
+          <p>K. Franke, E. Luders, A. May, M. Wilke, <u>C. Gaser</u>.<br />
+          Brain maturation: Predicting individual BrainAGE in children and adolescents using structural MRI.<br />
+          <em>Neuroimage</em>, <strong>63(3)</strong>: 1305-1312, 2012. <a href="pdf/Franke-NI12.pdf" target="_blank">PDF</a></p>
+          
+          <p>K. Franke, G. Ziegler, S. Klöppel, <u>C. Gaser</u>.<br />
+          Estimating the age of healthy subjects from T1-weighted MRI scans using kernel methods: Exploring the influence of various parameters.<br />
+          <em>Neuroimage</em>, <strong>50(3)</strong>: 883-892, 2010. <a href="pdf/Franke-NI10.pdf" target="_blank">PDF</a></p>
+          
+        </div>
+        </div>
       </section>
 
       <section id="plasticity" class="panel style1">
         <div class="container">
           <h3>Structural brain plasticity</h3>
             <p><img class="image normal right" src="images/music_large.png" alt="">
-Structural brain plasticity refers to the brain's ability to change its physical structure in response to experience. This plasticity is a result of the brain's adaptability to its environment. One way to study brain plasticity is by using structural MRIs to detect changes in the brain over time. Structural MRIs allow to look at the gross anatomical structure of the brain with a high detail. By looking at how the structure of the brain changes over time, we can learn about how the brain changes in response to learning.<br/>
-This research topic is important for the field of neuroimaging because it can help us understand how the brain changes in response to different experiences and how this plasticity contributes to brain function.<br/>
-Our findings in the juggler study suggest that the brain is capable of making structural changes in response to environmental demands. This discovery contradicts the traditionally held view that cortical plasticity is associated with functional rather than anatomical changes. The finding that the brain can alter its structure in response to experience has important implications for our understanding of brain plasticity and its role in learning and memory.<br/>
-In our group, we develop tools to analyze these subtle changes that can be seen over time. By understanding how the brain changes in response to experience, we can learn more about how the brain works and how the brain changes in response to learning.
+          Structural brain plasticity refers to the brain's ability to change its physical structure in response to experience. This plasticity is a result of the brain's adaptability to its environment. One way to study brain plasticity is by using structural MRIs to detect changes in the brain over time. Structural MRIs allow to look at the gross anatomical structure of the brain with a high detail. By looking at how the structure of the brain changes over time, we can learn about how the brain changes in response to learning.<br/>
+          This research topic is important for the field of neuroimaging because it can help us understand how the brain changes in response to different experiences and how this plasticity contributes to brain function.<br/>
+          Our findings in the juggler study suggest that the brain is capable of making structural changes in response to environmental demands. This discovery contradicts the traditionally held view that cortical plasticity is associated with functional rather than anatomical changes. The finding that the brain can alter its structure in response to experience has important implications for our understanding of brain plasticity and its role in learning and memory.<br/>
+          In our group, we develop tools to analyze these subtle changes that can be seen over time. By understanding how the brain changes in response to experience, we can learn more about how the brain works and how the brain changes in response to learning.
         </p>
+        <div class="container">
+          <h3>Relevant papers</h3>
+          <p>Schmidt S, Gull S, Herrmann KH, Boehme M, Irintchev A, Urbach A, Reichenbach JR, Klingner CM, Gaser C, Witte OW.<br />
+          Experience-dependent structural plasticity in the adult brain: How the learning brain grows.<br />
+          <em>Neuroimage</em> 2021 <strong>225</strong>:117502<a href="pdf/Schmidt-NI21.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Rogenmoser L, Kernbach J, Schlaug G, Gaser C.<br />
+          Keeping brains young with making music.<br />
+          <em>Brain Struct Funct. </em>2018 <strong>223(1)</strong>:297-305 <a href="pdf/Rogenmoser-BSF17.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>A. May, <u>C. Gaser</u>.<br />
+          Response to Thomas and Baker: the structural adaptation of the brain to training.<br />
+          <em>Trends Cogn Sci.</em>, <strong>16(2)</strong>: 97-8, 2012. <a href="pdf/May-TICS11.pdf" target="_blank">PDF</a></p>
+          
+          <p>L. Bezzola L, S. Mérillat, <u>C. Gaser</u>, L. Jäncke.<br />
+          Training-induced neural plasticity in golf novices.<br />
+          <em>Journal of Neuroscience</em>, <strong>31(35)</strong>: 12444-8, 2011. <a href="pdf/Bezzola-JoN11.pdf" target="_blank">PDF</a></p>
+          
+          <p>D. Mietchen, <u>C. Gaser</u>.<br />
+          Computational morphometry for detecting changes in brain structure due to development, aging, learning, disease and evolution.<br />
+          <em>Frontiers in Neuroinformatics</em>, <strong>3</strong>: 25, 2009. <a href="pdf/Mietchen-FiN09.pdf" target="_blank">PDF</a></p>
+          
+          <p>J. Driemeyer, J. Boyke, <u>C. Gaser</u>, C. Büchel, A. May.<br />
+          Changes in gray matter induced by learning&#8211;revisited.<br />
+          <em>PLoS ONE</em>, <strong>3(7)</strong>: e2669, 2008. <a href="pdf/Driemeyer-PlosOne08.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p>J. Boyke, J. Driemeyer, <u>C. Gaser</u>, C. Büchel, A. May.<br />
+          Training-Induced Brain Structure Changes in the Elderly.<br />
+          <em>Journal of Neuroscience</em>, <strong>28(28)</strong>: 7031-7035, 2008. <a href="pdf/Boyke-JoN08.pdf" target="_blank" rel="noopener noreferrer">PDF</a><br />
+          <a href="pdf/Boyke-JoN-ThisWeek.pdf" target="_blank" rel="noopener noreferrer">This week in Journal of Neuroscience</a></p>
+          
+          <p>R. Ilg, A.M. Wohlschlager, <u>C. Gaser</u>, Y. Liebau, R. Dauner, A. Woller, C. Zimmer, J. Zihl, M. Muhlau.<br />
+          Gray Matter Increase Induced by Practice Correlates with Task-Specific Activation: A Combined Functional and Morphometric Magnetic Resonance Imaging Study.<br />
+          <em>Journal of Neuroscience</em>, <strong>28(16)</strong>: 4210-4215, 2008. <a href="pdf/Ilg-JoN08.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p>A. May, <u>C. Gaser</u>.<br />
+          Magnetic resonance-based morphometry: a window into structural plasticity of the brain.<br />
+          <em>Current Opinion in Neurology</em>, <strong>19</strong>: 407-411, 2006.</p>
+          
+          <p>N. Gaab, <u>C. Gaser</u>, G. Schlaug.<br />
+          Improvement-related functional plasticity following pitch memory training.<br />
+          <em>Neuroimage</em>, <strong>31(1)</strong>: 255-63, 2006. <a href="pdf/Gaab-NI06.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>B. Draganski, <u>C. Gaser</u>, G. Kempermann, H.G. Kuhn, J. Winkler, C. Buchel, A. May.<br />
+          Temporal and spatial dynamics of brain structure changes during extensive learning.<br />
+          <em>Journal of Neuroscience</em>, <strong>26(23)</strong>: 6314-7, 2006. <a href="pdf/Draganski-JoN06.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p>B. Draganski, <u>C. Gaser</u>, V. Busch, G. Schuierer, U. Bogdahn, A. May.<br />
+          Changes in grey matter induced by training.<br />
+          <em>Nature</em>, <strong>427</strong>:311-312, 2004. <a href="pdf/Draganski-Nature.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p><u>C. Gaser</u>, G. Schlaug.<br />
+          Gray Matter Differences between Musicians and Non-Musicians.<br />
+          <em>Annals of the New York Academy of Sciences</em>, <strong>999</strong>: 54-58, 2003. <a href="pdf/Gaser-AnnNYAS.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p><u>C. Gaser</u>, G. Schlaug.<br />
+          Brain Structures differ between Musicians and Non-Musicians.<br />
+          <em>Journal of Neuroscience</em>, <strong>27</strong>:9240-9245, 2003. <a href="pdf/Gaser-JoN.pdf" target="_blank" rel="noopener noreferrer">PDF</a><br />
+          <a href="pdf/Gaser-JoN-ThisWeek.pdf" target="_blank" rel="noopener noreferrer">This week in Journal of Neuroscience</a></p>
+          
+          <p><u>C. Gaser</u>, I. Nenadic, B. Buchsbaum, E. Hazlett, M. S. Buchsbaum.<br />
+          Deformation-based morphometry and its relation to conventional volumetry of brain lateral ventricles in MRI.<br />
+          <em>Neuroimage</em>, <strong>13</strong>:1140-1145, 2001. <a href="pdf/Gaser-NI01.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+        </div>
         </div>
       </section>
 
@@ -180,6 +409,49 @@ In our group, we develop tools to analyze these subtle changes that can be seen 
           <p>The<strong> depth of sulci </strong>can be measured based on a hull surface which surrounds the whole brain and gives additional information on the convolution of the brain. Like thickness measures, sulcal depth also allows different definitions.</p>
           <p style="text-align: center;"><img class="align-center" src="images/gyrification_index.en.jpg" alt="" width="500" height="155" /></p>
           <p style="text-align: center;"><img loading="lazy" class="align-center" src="images/cortical_measures.en.jpg" alt="" width="500" height="221" /></p>
+        <div id="" class="container">
+          <h3>Relevant papers</h3>
+
+          <p>Schmitt S, Besteher B, Gaser C, Nenadic I.<br />
+          Human time perspective and its structural associations with voxel-based morphometry and gyrification.<br />
+          <em>Brain Imaging Behav.</em> 2021 <strong>15(5)</strong>:2237-2245<a href="pdf/Schmitt-BIB20.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Evermann U, Gaser C, Besteher B, Langbein K, Nenadic I.<br />
+          Cortical Gyrification, Psychotic-Like Experiences, and Cognitive Performance in Nonclinical Subjects.<br />
+          <em>Schizophr Bull.</em> 2020 <strong>46(6)</strong>:1524-1534<a href="pdf/Evermann-SB20.pdf" target="_blank" rel="noopener noreferrer"> PDF</a></p>
+
+          <p>Hedderich DM, Bäuml JG, Berndt MT, Menegaux A, Scheef L, Daamen M, Zimmer C, Bartmann P, Boecker H, Wolke D, Gaser C, Sorg C.<br />
+          Aberrant gyrification contributes to the link between gestational age and adult IQ after premature birth.<br />
+          <em>Brain.</em> 2019 <strong>142 (5)</strong>, 1255-1269 <a href="pdf/Hedderich-Brain19.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Spalthoff R, Gaser C, Nenadic I.<br />
+          Altered gyrification in schizophrenia and its relation to other morphometric markers.<br />
+          <em>Schizophr Res. </em>2018 <strong>202</strong>:195-202 <a href="pdf/Spalthoff-SR18.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>Besteher B, Gaser C, Spalthoff R, Nenadic I.<br />
+          Associations between urban upbringing and cortical thickness and gyrification.<br />
+          <em>J Psychiatr Res. </em>2017 <strong>95</strong>: 114-120 <a href="pdf/Besteher-JPR17.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+
+          <p>I. Nenadic, R. Maitra, M. Dietzek, K. Langbein, S. Smesny, H. Sauer, C. Gaser.<br>Prefrontal gyrification in psychotic bipolar I disorder vs. schizophrenia.<br><em>J Affect Disord</em>, <strong>185</strong>: 104-107, 2015. <a href="pdf/Nenadic-JAD15.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+          
+          <p>C.C. Schultz, G. Wagner, K. Koch, C. Gaser, M. Roebel, C. Schachtzabel, I. Nenadic, J.R. Reichenbach, H. Sauer, R.G. Schlösser.<br>The visual cortex in schizophrenia: alterations of gyrification rather than cortical thickness-a combined cortical shape analysis.<br><em>Brain Struct Funct</em>, <strong>218(1)</strong>: 5-8, 2013. <a href="pdf/Schultz-BSF11.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+
+          <p>E. Luders, F. Kurth, E.A. Mayer, A.W. Toga, K.L. Narr, <u>C. Gaser</u>.<br />
+          The unique brain anatomy of meditation practitioners: alterations in cortical gyrification.<br />
+          <em>Frontiers in Human Neuroscience</em>, <strong>6</strong>: 34, 2012. <a href="pdf/Luders-FnHum12.pdf" target="_blank">PDF</a></p>
+          
+          <p>C.C. Schultz, K. Koch, G. Wagner, M. Roebel, I. Nenadic, <u>C. Gaser</u>, C. Schachtzabel, J.R. Reichenbach, H. Sauer, R.G. Schlösser.<br />
+          Increased parahippocampal and lingual gyrification in first-episode schizophrenia.<br />
+          <em>Schizophrenia Research</em>, <strong>123(2-3)</strong>: 137–144, 2010. <a href="pdf/Schultz-SR10b.pdf" target="_blank">PDF</a></p>
+          
+          <p><u>C. Gaser</u>, E. Luders E, P.M. Thompson, A.D. Lee, R.A. Dutton, J.A. Geaga, K.M. Hayashi, U. Bellugi, A.M. Galaburda, J.R. Korenberg, D.L. Mills, A.W. Toga, A.L. Reiss.<br />
+          Increased local gyrification mapped in Williams syndrome.<br />
+          <em>Neuroimage</em>, <strong>33(1)</strong>: 46-54, 2006. <a href="pdf/Gaser-NI06.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+          
+          <p>E. Luders, P.M. Thompson, K.L. Narr, A.W. Toga, L. Jancke, <u>C. Gaser</u>.<br />
+          A curvature-based approach to estimate local gyrification on the cortical surface.<br />
+          <em>Neuroimage</em>, <strong>29(4)</strong>: 1224-30, 2006. <a href="pdf/Luders-NI06.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+        </div>
         </div>
       </section>
 
