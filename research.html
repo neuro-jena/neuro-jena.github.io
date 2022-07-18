@@ -35,10 +35,10 @@
                 <li>
                   <a href="research.html">Research</a>
                   <ul>
-                    <li><a href="research.html#methods">Methods for structural brain imaging</a></li>
+                    <li><a href="research.html#methods">Methods for Computational Anatomy</a></li>
                     <li><a href="research.html#brainage">BrainAGE</a></li>
-                    <li><a href="research.html#plasticity">Structural brain plasticity</a></li>
-                    <li><a href="research.html#gyrification">Gyrification and folding measures</a></li>
+                    <li><a href="research.html#plasticity">Structural Brain Plasticity</a></li>
+                    <li><a href="research.html#gyrification">Gyrification and Folding Measures</a></li>
                   </ul>
                 </li>
                 <li>
@@ -135,16 +135,21 @@ The brain surface in healthy human adults is normally highly convoluted, with gy
 
       <section id="methods" class="panel style1">
         <div class="container">
-          <h3>Methods for structural brain imaging</h3>
-          <p><strong>Magnetic resonance imaging (MRI)</strong> is a way to visualize spatial information about macroscopic ensembles of atomic nuclei, typically the distribution of 1H nuclei within a patient lying in a clinical scanner. Image contrast can be generated in a variety of ways that highlight different properties of these nuclei (e.g., their density, their interaction with electromagnetic fields, their chemical environment, or their diffusion or flow), averaged over small volume elements of the brain, typically with a resolution of 1 cubic mm. Most of the morphometric tools we use and develop were optimized for data obtained by means of T1-weighted MP-RAGE sequences.</p>
+          <h3>Methods for Computational Anatomy</h3>
+          <p><img class="image medium right" src="images/CAT-Processing-Pipeline.png" alt="">
+<p>The brain is the most complex organ of the human body, and no two brains are alike. The study of the human brain is still in its infancy, but rapid technical advances in image acquisition and image processing have allowed for ever more refined characterizations of its micro- and macro-structure. Enormous efforts, for example, have been made to map differences between groups (e.g., young vs. old, diseased vs. healthy, male vs. female), to capture changes over time (e.g., from infancy to old age, or in the framework of neuroplasticity, as a result of a clinical intervention), or to assess correlations of brain attributes (e.g., measures of length, volume, shape) with behavioral, cognitive, or clinical parameters. Sophisticated tools for such analyses - which can be voxel-based, surface-based, or region-based - have been provided with popular analysis, discovery, and visualization tools.<br/>
+To process MRIs for the listed analyses, several preprocessings steps are required that include segmentation, spatial registration, or in the case of cortical surface extraction, toplogy correction, spherical inflation and registration to name a few. We have developed sophisticated methods for Computational Anatomy Toolbox providing a comprehensive set of analysis options, workflows, and integrated pipelines.
+</p>
+<!--          <p><strong>Magnetic resonance imaging (MRI)</strong> is a way to visualize spatial information about macroscopic ensembles of atomic nuclei, typically the distribution of 1H nuclei within a patient lying in a clinical scanner. Image contrast can be generated in a variety of ways that highlight different properties of these nuclei (e.g., their density, their interaction with electromagnetic fields, their chemical environment, or their diffusion or flow), averaged over small volume elements of the brain, typically with a resolution of 1 cubic mm. Most of the morphometric tools we use and develop were optimized for data obtained by means of T1-weighted MP-RAGE sequences.</p>
           <p>The cerebral cortex is a highly folded sheet of gray matter (GM) that lies inside the cerebrospinal fluid (CSF) and surrounds a core of white matter (WM). To analyse cortical structures, it is necessary to remove non-brain tissue and to classify the remaining tissue into GM, WM, and CSF. This early processing step of structural MRI data is called <strong>tissue segmentation</strong>. A sub-segmentation into the left and right hemisphere and the removal of the brainstem is also necessary.</p>
           <p style="text-align: center;"><img class="alignnone" src="images/human_brain.en.jpg" alt="" width="500" height="285" /></p>
-          <p>The tissue segmentation result is used to create a mesh representing the GM sheet. An analogy for the GM sheet is a collapsed balloon.Â  There are two ways to reconstruct it. The first one starts with a fully inflated balloon and changes the surface of the balloon to match the cortical structur (a deformable surface or top-down approach). The second way to <strong>reconstruct the surface</strong> is based on the tissue map (a bottom-up approach), which tends to produce a more accurate surface reconstruction.</p>
+          <p>The tissue segmentation result is used to create a mesh representing the GM sheet. An analogy for the GM sheet is a collapsed balloon.  There are two ways to reconstruct it. The first one starts with a fully inflated balloon and changes the surface of the balloon to match the cortical structur (a deformable surface or top-down approach). The second way to <strong>reconstruct the surface</strong> is based on the tissue map (a bottom-up approach), which tends to produce a more accurate surface reconstruction.</p>
           <p>The central surface (CS) of brain cortex may have some analytical advantages compared to boundary surfaces between the gray matter (GM) and either the white matter (WM) or cerebrospinal fluid (CSF). Since the regions between two gyri are often blurred in the segmentation result due to the partial volume effects, it is necessary to reconstruct these regions. We have developed different voxel- and surface-based methods that primarily use distance-based information to reconstruct an accurate CS.</p>
           <p>Because we use a bottom-up approach, the reconstructed surface has some topology errors. Noise and partial volume effects lead to mis-classification of brain tissue. These processing errors are visible as bridges between gyri or holes within a gyrus. Because the brain surface has the same shape as a strongly folded balloon, we can remove these defects using <strong>topology correction</strong> methods.</p>
           <p style="text-align: center;"><img loading="lazy" class="align-center" src="images/topology_correction.en.jpg" alt="" width="500" height="166" /></p>
           <p>A common processing step for cortical surfaces is to map the cortical surface mesh to a spherical surface for improved brain registration and advanced analytical techniques. The ideal spherical mapping is isometric - all angles and areas are preserved. Such a mapping potentially improves the quality of subsequent processing steps. However, there is a trade-off between angle and area distortion when mapping the cortical surface to a sphere. Our lab has developed a fast new method to generate a pseudo-isometric <strong>spherical mapping of the cortical surface</strong>. The initial spherical map is a conformal map produced via the Laplace-Beltrami operator optimized with a Möbius transformation (in figure, LB). The conformal map is then post-processed using a processing pipeline consisting of in-house algorithms designed to reduce area distortion (in figure, Iso). The spherical maps generated using our method have low area and angular distortion.</p>
           <p style="text-align: center;"><img loading="lazy" class="align-center" src="images/conformal_mapping.en.jpg" alt="" width="500" height="372" /></p>
+-->
         <div class="container">
           <h3>Relevant papers</h3>
           <p>Gaser C, Dahnke R, Thompson PM, Kurth F, Luders E.<br />
@@ -327,7 +332,7 @@ The brain surface in healthy human adults is normally highly convoluted, with gy
 
       <section id="plasticity" class="panel style1">
         <div class="container">
-          <h3>Structural brain plasticity</h3>
+          <h3>Structural Brain Plasticity</h3>
             <p><img class="image normal right" src="images/music_large.png" alt="">
           Structural brain plasticity refers to the brain's ability to change its physical structure in response to experience. This plasticity is a result of the brain's adaptability to its environment. One way to study brain plasticity is by using structural MRIs to detect changes in the brain over time. Structural MRIs allow to look at the gross anatomical structure of the brain with a high detail. By looking at how the structure of the brain changes over time, we can learn about how the brain changes in response to learning.<br/>
           This research topic is important for the field of neuroimaging because it can help us understand how the brain changes in response to different experiences and how this plasticity contributes to brain function.<br/>
@@ -404,7 +409,7 @@ The brain surface in healthy human adults is normally highly convoluted, with gy
 
       <section id="gyrification" class="panel style1">
         <div class="container">
-          <h3>Gyrification and folding measures</h3>
+          <h3>Gyrification and Folding Measures</h3>
           <p>The brain surface in healthy human adults is normally highly convoluted, with ridges (gyri) and faults (sulci). <strong>Gyrification</strong> refers to both this folding process and quantitative measures thereof. Given that abnormal gyrification patterns have been found in patients with schizophrenia and other neuropsychiatric disorders, we develop methods, based on structural MRI scans, to measure gyrification automatically on both local and whole-brain levels. We hope that these methods may eventually contribute to an earlier diagnosis and for monitoring patients during the therapeutic phase. The gyrification of the the cortex can be measured by curvature, as a relation between different cortical surfaces for the global brain, or as the relation between the curves of these surface in a slice.</p>
           <p>The<strong> depth of sulci </strong>can be measured based on a hull surface which surrounds the whole brain and gives additional information on the convolution of the brain. Like thickness measures, sulcal depth also allows different definitions.</p>
           <p style="text-align: center;"><img class="align-center" src="images/gyrification_index.en.jpg" alt="" width="500" height="155" /></p>
