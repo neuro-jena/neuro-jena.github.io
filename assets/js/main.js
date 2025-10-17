@@ -47,7 +47,7 @@
     // Title Bar.
       $(
         '<div id="titleBar">' +
-          '<a href="#navPanel" class="toggle"></a>' +
+          '<a href="#navPanel" class="toggle" aria-label="Open menu" aria-controls="navPanel" aria-expanded="false" role="button"></a>' +
           '<span class="title">' + $('#logo h1').html() + '</span>' +
         '</div>'
       )
@@ -72,6 +72,19 @@
           target: $body,
           visibleClass: 'navPanel-visible'
         });
+
+    // Keep aria-expanded in sync with panel visibility
+    (function() {
+      var toggleEl = document.querySelector('#titleBar .toggle');
+      if (!toggleEl) return;
+      var update = function() {
+        var expanded = document.body.classList.contains('navPanel-visible');
+        toggleEl.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      };
+      var mo = new MutationObserver(update);
+      mo.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+      update();
+    })();
 
   // Animated links.
     $animatedLinks
